@@ -2354,7 +2354,7 @@
 	z-index:-1;
 	width:193px;
 	height:193px;
-	background:url(../images/resource/experience-bg.png);
+	/* background:url(../images/resource/experience-bg.png); */
 	background-repeat:no-repeat;
 }
 
