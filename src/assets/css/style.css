@@ -7,6 +7,10 @@
 
 ***/
 
+#aslide-close{
+	left: -500px;
+}
+
 .main-slider{
 	position:relative;
 	overflow:hidden;

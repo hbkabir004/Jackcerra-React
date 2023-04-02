@@ -1,0 +1,5 @@
+.scroll-to-top {
+  transition: stroke-dashoffset 10ms linear 0s;
+  stroke-dasharray: 307.919px, 307.919px;
+  stroke-dashoffset: 228.265px;
+}
