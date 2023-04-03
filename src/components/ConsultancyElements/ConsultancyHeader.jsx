@@ -2,8 +2,48 @@ import React, { useState } from 'react';
 import AsideInfoBar from '../common/AsideInfoBar';
 
 const ConsultancyHeader = () => {
-    const [isActive, setActive] = useState("false");
-    const handleActive = () => {
+    // Hide header on scroll down
+    window.onscroll = function () { myFunction() }; function myFunction() {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            document.querySelector('header').classList.add('top-up');
+        } else {
+            document.querySelector('header').classList.remove('top-up');
+        }
+    }
+
+
+    // // Hide header on scroll down
+    // const nav = document.querySelector(".main-header");
+    // const scrollUp = "top-up";
+    // let lastScroll = 800;
+
+    // window.addEventListener("scroll", () => {
+    //     const currentScroll = window.pageYOffset;
+    //     if (currentScroll <= 800) {
+    //         nav.classList.remove(scrollUp);
+    //         return;
+    //     }
+
+    //     if (currentScroll > lastScroll) {
+    //         // down
+    //         nav.classList.add(scrollUp);
+
+    //     } else if (currentScroll < lastScroll) {
+    //         // up
+    //         nav.classList.remove(scrollUp);
+    //     }
+    //     lastScroll = currentScroll;
+    // });
+
+    // Aside info bar
+    const [isAdd, setAdd] = useState("false");
+    const handleAddCss = () => {
+        setAdd(!isAdd);
+    };
+
+    // Search width increase
+    const [isActive, setActive] = useState('false');
+    const handleToggle = () => {
         setActive(!isActive);
     };
 
@@ -104,15 +144,15 @@ const ConsultancyHeader = () => {
                                 <div className="outer-box d-flex align-items-center">
 
                                     {/* <!-- Header Search --> */}
-                                    <div className="header_search d-none d-sm-block">
-                                        <form className="search_form" action="search.php">
+                                    <div onClick={handleToggle} className="header_search d-none d-sm-block">
+                                        <form className={isActive ? null : "active"} id="search_form" >
                                             <input type="text" name="search" className="keyword form-control" placeholder="Search..." />
                                             <button type="submit" className="form-control-submit"><img src="images/icons/search.png" alt="img" /></button>
                                         </form>
                                     </div>
 
                                     {/* <!-- Aside Panel --> */}
-                                    <a onClick={handleActive} href="#" className="aside_open d-none d-sm-block"><img src="images/icons/menu.png" alt="img" /></a>
+                                    <a onClick={handleAddCss} href="#" className="aside_open d-none d-sm-block"><img src="images/icons/menu.png" alt="img" /></a>
 
                                     {/* <!-- Responsive Menu --> */}
                                     <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button">
@@ -131,7 +171,7 @@ const ConsultancyHeader = () => {
 
             </header>
 
-            <AsideInfoBar handleActive={handleActive} isActive={isActive} />
+            <AsideInfoBar handleAddCss={handleAddCss} isAdd={isAdd} />
 
         </div >
     );

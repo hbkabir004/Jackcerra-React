@@ -604,7 +604,7 @@
 	transition: all 0.5s ease;
 }
 
-.main-header.two .header_search .search_form {
+.main-header.two .header_search #search_form {
 	max-width: 250px;
 	width: 140px;
 	position: relative;
@@ -612,7 +612,7 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.main-header.two .header_search .search_form .form-control {
+.main-header.two .header_search #search_form .form-control {
 	font-size: 16px;
 	padding: 0px 0px 0px 50px;
 	height: 50px;
@@ -624,15 +624,15 @@
 	width: 100%;
 }
 
-.main-header.two .header_search .search_form .form-control:focus {
+.main-header.two .header_search #search_form .form-control:focus {
 	box-shadow: none;
 }
 
-.main-header.two .header_search .search_form.active {
+.main-header.two .header_search #search_form.active {
 	width: 180px;
 }
 
-.main-header.two .header_search .search_form .form-control-submit {
+.main-header.two .header_search #search_form .form-control-submit {
 	position: absolute;
 	top: 0;
 	left: 25px;
@@ -645,35 +645,35 @@
 	cursor: pointer;
 }
 
-.main-header.two .header_search .search_form .form-control-submit:focus {
+.main-header.two .header_search #search_form .form-control-submit:focus {
 	outline: none;
 }
 
-.main-header.two .header_search .search_form ::-webkit-input-placeholder {
+.main-header.two .header_search #search_form ::-webkit-input-placeholder {
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--color-two);
 }
 
-.main-header.two .header_search .search_form ::-moz-placeholder {
+.main-header.two .header_search #search_form ::-moz-placeholder {
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--color-two);
 }
 
-.main-header.two .header_search .search_form :-ms-input-placeholder {
+.main-header.two .header_search #search_form :-ms-input-placeholder {
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--color-two);
 }
 
-.main-header.two .header_search .search_form :-moz-placeholder {
+.main-header.two .header_search #search_form :-moz-placeholder {
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--color-two);
 }
 
-.main-header.two .header_search .search_form :placeholder {
+.main-header.two .header_search #search_form :placeholder {
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--color-two);

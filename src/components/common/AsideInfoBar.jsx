@@ -1,12 +1,12 @@
 import React from 'react';
 
-const AsideInfoBar = ({ handleActive, isActive }) => {
+const AsideInfoBar = ({ handleAddCss, isAdd }) => {
 
     return (
-        <div style={!isActive ? { left: '0px' } : { left: '-500px' }} className="aside_info">
-            <div onClick={handleActive} className="aside_close"><i className="fa fa-close"></i></div>
+        <div style={!isAdd ? { left: '0px' } : { left: '-500px' }} className="aside_info">
+            <div onClick={handleAddCss} className="aside_close"><i className="fa fa-close"></i></div>
             <div className="logo-side">
-                <a href="index.html">
+                <a href="/consultancy">
                     <img src="images/logo.svg" alt="img" />
                 </a>
             </div>
@@ -33,7 +33,6 @@ const AsideInfoBar = ({ handleActive, isActive }) => {
                 </ul>
             </div>
         </div>
-        // <></>
     );
 };
 
