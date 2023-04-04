@@ -1,7 +1,7 @@
 import React from 'react';
 import TeamBlock from '../components/ConsultancyElements/TeamBlock';
 
-const TeamPage = () => {
+const TeamPageContainer = () => {
     const TeamPageData = [
         {
             id: '1',
@@ -60,4 +60,4 @@ const TeamPage = () => {
     );
 };
 
-export default TeamPage;
+export default TeamPageContainer;

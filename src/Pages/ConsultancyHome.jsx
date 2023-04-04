@@ -20,7 +20,7 @@ const ConsultancyHome = () => {
             <TeamContainer />
             <CallToAction />
             <ProcessSection />
-            <Testimonials />
+            <Testimonials textColor='text-white' />
             <NewsContainer />
             <ContactForm />
         </>

@@ -2,8 +2,9 @@ import { createBrowserRouter } from 'react-router-dom';
 
 // Consultancy Layouts
 import ConsultancyLayout from '../Layouts/ConsultancyLayout';
+import AboutPage from '../Pages/AboutPage';
 import ConsultancyHome from '../Pages/ConsultancyHome';
-import Team from '../Pages/Team';
+import TeamPage from '../Pages/TeamPage';
 
 // Home Layouts02
 
@@ -46,13 +47,13 @@ export const routes = createBrowserRouter([
             //     path: '/service-details',
             //     element: <ServiceDetails/>
             // },
-            // {
-            //     path: '/about',
-            //     element: <About/>
-            // },
+            {
+                path: '/about',
+                element: <AboutPage/>
+            },
             {
                 path: '/team',
-                element: <Team/>
+                element: <TeamPage/>
             },
             // {
             //     path: '/faq',

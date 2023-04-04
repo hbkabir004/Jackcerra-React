@@ -8,7 +8,7 @@ const PageHeader = (props) => {
                     <h2 className="heading">{props.title}</h2>
                     <ul className="breadcrumb">
                         <li><a href="/consultancy">Home</a></li>
-                        <li><a href="#">Pages</a></li>
+                        <li className={props.routeClass}><a href="#">{props.route02}</a></li>
                         <li className="active">{props.active}</li>
                     </ul>
                 </div>

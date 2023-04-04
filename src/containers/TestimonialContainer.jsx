@@ -1,10 +1,11 @@
 import React from 'react';
 import { Autoplay, Controller, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SectionTitle02 from '../../components/ConsultancyElements/SectionTitle02';
-import TestimonialBlock from '../../components/ConsultancyElements/TestimonialBlock';
-const Testimonials = (props) => {
-    const TestimonialData = [
+import SectionTitle02 from '../components/ConsultancyElements/SectionTitle02';
+import TestimonialBlock from '../components/ConsultancyElements/TestimonialBlock';
+
+const TestimonialContainer = () => {
+    const TestimonialAboutData = [
         {
             id: '1',
             img: 'images/resource/reviewer-1.png',
@@ -79,27 +80,25 @@ const Testimonials = (props) => {
         },
     ];
     return (
-        <section className="testimonial-section two" style={{ backgroundImage: `url(images/background/13.jpg)` }}>
-            <div className="container">
-                <div className="row d-block d-lg-flex clearfix flex-nowrap">
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row clearfix">
 
                     {/* <!-- Title Column --> */}
-                    <div className="title-column col-xl-4 col-lg-4 col-md-12 col-sm-12 pe-0">
-                        <div className="inner-column">
+                    <div class="title-column col-lg-4 col-md-12 col-sm-12 px-lg-0">
+                        <div class="inner-column">
                             <SectionTitle02
                                 title="CLIENTS TESTIMONIAL"
                                 header="What our Clients"
                                 ext="say about Us"
-                                textColor={props.textColor}
                             />
-
                         </div>
                     </div>
 
                     {/* <!-- Carousel Column --> */}
-                    <div className="carousel-column">
-                        <div className="inner-column">
-                            <div className="testimonial-carousel-two owl-carousel owl-theme">
+                    <div class="carousel-column col-lg-8 col-md-12 col-sm-12">
+                        <div class="inner-column">
+                            <div class="testimonial-carousel owl-carousel owl-theme">
                                 <Swiper
                                     className="owl-stage-outer"
                                     modules={[Controller, Autoplay, Pagination]}
@@ -122,18 +121,7 @@ const Testimonials = (props) => {
                                             slidesPerView: 1,
                                         },
 
-                                        // 640: {
-                                        //     width: 640,
-                                        //     slidesPerView: 1,
-                                        // },
-                                        // 768: {
-                                        //     width: 768,
-                                        //     slidesPerView: 2,
-                                        // },
-                                        // 992: {
-                                        //     width: 992,
-                                        //     slidesPerView: 3,
-                                        // },
+
                                     }}
                                     loop={true}
                                     controller={{ inverse: true }}
@@ -146,14 +134,13 @@ const Testimonials = (props) => {
 
                                 >
                                     {
-                                        TestimonialData.map(data => <SwiperSlide><TestimonialBlock
+                                        TestimonialAboutData.map(data => <SwiperSlide><TestimonialBlock
                                             key={data.id}
                                             data={data}
                                         /></SwiperSlide>)
                                     }
 
                                 </Swiper>
-
 
 
                             </div>
@@ -166,4 +153,4 @@ const Testimonials = (props) => {
     );
 };
 
-export default Testimonials;
+export default TestimonialContainer;
