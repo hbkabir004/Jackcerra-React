@@ -117,11 +117,11 @@ const NewsContainer = () => {
                     <Swiper
                         className="owl-stage-outer"
                         modules={[Navigation, Controller, Autoplay]}
-                        // autoplay={{
-                        //     delay: 5000,
-                        //     disableOnInteraction: true,
-                        //     speed: 100
-                        // }}
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: true,
+                            speed: 100
+                        }}
                         breakpoints={{
                             640: {
                                 width: 381,
@@ -135,10 +135,23 @@ const NewsContainer = () => {
                                 width: 442,
                                 slidesPerView: 1,
                             },
+
+                            // 640: {
+                            //     width: 640,
+                            //     slidesPerView: 1,
+                            // },
+                            // 768: {
+                            //     width: 768,
+                            //     slidesPerView: 2,
+                            // },
+                            // 992: {
+                            //     width: 992,
+                            //     slidesPerView: 2,
+                            // },
                         }}
-                        loop={true}
-                        controller={{ inverse: true }}
-                        spaceBetween={5}
+                        // loop={true}
+                        // controller={{ inverse: true }}
+                        // spaceBetween={5}
                         navigation={{
                             prevEl: '.owl-prev',
                             nextEl: '.owl-next',

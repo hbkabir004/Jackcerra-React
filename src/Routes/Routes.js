@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 // Consultancy Layouts
 import ConsultancyLayout from '../Layouts/ConsultancyLayout';
 import ConsultancyHome from '../Pages/ConsultancyHome';
+import Team from '../Pages/Team';
 
 // Home Layouts02
 
@@ -15,6 +16,10 @@ export const routes = createBrowserRouter([
         children: [
             {
                 path: '/',
+                element: <ConsultancyHome/>
+            },
+            {
+                path: '/consultancy',
                 element: <ConsultancyHome/>
             },
             // {
@@ -45,10 +50,10 @@ export const routes = createBrowserRouter([
             //     path: '/about',
             //     element: <About/>
             // },
-            // {
-            //     path: '/team',
-            //     element: <TeamPage/>
-            // },
+            {
+                path: '/team',
+                element: <Team/>
+            },
             // {
             //     path: '/faq',
             //     element: <FAQ/>

@@ -3,8 +3,16 @@ import AsideInfoBar from '../common/AsideInfoBar';
 
 const ConsultancyHeader = () => {
     // Hide header on scroll down
+    // window.onscroll = function () { myFunction() }; function myFunction() {
+    //     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+    //         document.querySelector('header').classList.add('sticky');
+    //     } else {
+    //         document.querySelector('header').classList.remove('sticky');
+    //     }
+    // }
+
     window.onscroll = function () { myFunction() }; function myFunction() {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        if (document.body.scrollTop >= 800 || document.documentElement.scrollTop >= 800) {
             document.querySelector('header').classList.add('top-up');
         } else {
             document.querySelector('header').classList.remove('top-up');
@@ -34,6 +42,15 @@ const ConsultancyHeader = () => {
     //     }
     //     lastScroll = currentScroll;
     // });
+
+    // Sticky Header
+    // const [isSticky, setSticky] = useState("false");
+    // let scroll = document.body
+    // const handleSticky = () => {
+    //     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+    //         setSticky(!isSticky);
+    //     }
+    // };
 
     // Aside info bar
     const [isAdd, setAdd] = useState("false");
@@ -155,7 +172,12 @@ const ConsultancyHeader = () => {
                                     <a onClick={handleAddCss} href="#" className="aside_open d-none d-sm-block"><img src="images/icons/menu.png" alt="img" /></a>
 
                                     {/* <!-- Responsive Menu --> */}
-                                    <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button">
+                                    {/* <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button">
+                                        <i className="bi bi-list"></i>
+                                    </button> */}
+
+                                    <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
+                                    >
                                         <i className="bi bi-list"></i>
                                     </button>
                                 </div>
@@ -172,7 +194,7 @@ const ConsultancyHeader = () => {
             </header>
 
             <AsideInfoBar handleAddCss={handleAddCss} isAdd={isAdd} />
-
+            {/* <MobileNav /> */}
         </div >
     );
 };
