@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import ConsultancyLayout from '../Layouts/ConsultancyLayout';
 import AboutPage from '../Pages/AboutPage';
 import ConsultancyHome from '../Pages/ConsultancyHome';
+import FAQ from '../Pages/FAQ';
 import TeamPage from '../Pages/TeamPage';
 
 // Home Layouts02
@@ -55,10 +56,10 @@ export const routes = createBrowserRouter([
                 path: '/team',
                 element: <TeamPage/>
             },
-            // {
-            //     path: '/faq',
-            //     element: <FAQ/>
-            // },
+            {
+                path: '/faq',
+                element: <FAQ/>
+            },
             // {
             //     path: '/blog-1',
             //     element: <Blog01/>
