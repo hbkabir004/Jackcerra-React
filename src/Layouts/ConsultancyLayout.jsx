@@ -7,9 +7,13 @@ import ScrollToTop from '../components/common/ScrollToTop/ScrollToTop';
 const ConsultancyLayout = () => {
     return (
         <>
-            <ConsultancyHeader />
-            <Outlet />
-            <ConsultancyFooter />
+            <>
+                {/* <div className="page-wrapper"> */}
+                <ConsultancyHeader />
+                <Outlet />
+                <ConsultancyFooter />
+                {/* </div> */}
+            </>
             <ScrollToTop />
         </>
     );

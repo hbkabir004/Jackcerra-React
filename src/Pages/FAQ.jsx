@@ -4,7 +4,7 @@ import PageHeader from '../components/common/PageHeader';
 
 const FAQ = () => {
     return (
-        <div className="page-wrapper">
+        <div className='mt-5'>
             <PageHeader title='FAQ' active='FAQ' route02='PAGES' />
             <Accordion />
         </div>

@@ -2,55 +2,35 @@ import React, { useState } from 'react';
 import AsideInfoBar from '../common/AsideInfoBar';
 
 const ConsultancyHeader = () => {
-    // Hide header on scroll down
-    // window.onscroll = function () { myFunction() }; function myFunction() {
-    //     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
-    //         document.querySelector('header').classList.add('sticky');
-    //     } else {
-    //         document.querySelector('header').classList.remove('sticky');
-    //     }
-    // }
 
-    window.onscroll = function () { myFunction() }; function myFunction() {
-        if (document.body.scrollTop >= 800 || document.documentElement.scrollTop >= 800) {
-            document.querySelector('header').classList.add('top-up');
+    // Sticky Header
+    window.onscroll = () => {
+        if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+            document.querySelector('header').classList.add('sticky');
         } else {
-            document.querySelector('header').classList.remove('top-up');
+            document.querySelector('header').classList.remove('sticky');
         }
     }
 
 
-    // // Hide header on scroll down
-    // const nav = document.querySelector(".main-header");
-    // const scrollUp = "top-up";
+    // Hide header on scroll down
     // let lastScroll = 800;
-
-    // window.addEventListener("scroll", () => {
+    // window.onscroll = () => {
     //     const currentScroll = window.pageYOffset;
     //     if (currentScroll <= 800) {
-    //         nav.classList.remove(scrollUp);
+    //         document.querySelector('header').classList.remove('top-up');
     //         return;
     //     }
 
     //     if (currentScroll > lastScroll) {
-    //         // down
-    //         nav.classList.add(scrollUp);
 
-    //     } else if (currentScroll < lastScroll) {
-    //         // up
-    //         nav.classList.remove(scrollUp);
+    //         document.querySelector('header').classList.add('top-up');
+    //     }
+    //     else if (currentScroll < lastScroll) {
+    //         document.querySelector('header').classList.remove('top-up');
     //     }
     //     lastScroll = currentScroll;
-    // });
-
-    // Sticky Header
-    // const [isSticky, setSticky] = useState("false");
-    // let scroll = document.body
-    // const handleSticky = () => {
-    //     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
-    //         setSticky(!isSticky);
-    //     }
-    // };
+    // }
 
     // Aside info bar
     const [isAdd, setAdd] = useState("false");
@@ -65,7 +45,7 @@ const ConsultancyHeader = () => {
     };
 
     return (
-        <div className="page-wrapper">
+        <>
             <header className="main-header two">
 
                 {/* <!-- Header Top --> */}
@@ -195,7 +175,7 @@ const ConsultancyHeader = () => {
 
             <AsideInfoBar handleAddCss={handleAddCss} isAdd={isAdd} />
             {/* <MobileNav /> */}
-        </div >
+        </ >
     );
 };
 

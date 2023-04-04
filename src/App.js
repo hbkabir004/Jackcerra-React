@@ -11,7 +11,7 @@ import './assets/css/main.css';
 
 function App() {
   return (
-    <div>
+    <div className="page-wrapper">
       <RouterProvider router={routes} />
     </div>
   );

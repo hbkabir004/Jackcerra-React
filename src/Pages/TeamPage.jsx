@@ -4,7 +4,7 @@ import TeamPageContainer from '../containers/TeamPageContainer';
 
 const TeamPage = () => {
     return (
-        <div className="page-wrapper">
+        <div className='mt-5'>
             <PageHeader title='Our Team' active='TEAM' route02='PAGES' />
             <TeamPageContainer />
         </div>

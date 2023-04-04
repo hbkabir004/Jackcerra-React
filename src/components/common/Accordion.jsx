@@ -2,16 +2,6 @@ import React from 'react';
 import SectionTitle from '../ConsultancyElements/SectionTitle';
 
 const Accordion = () => {
-    // $(".accordion").on("click",".accordion_tab", function () {
-    //     $(this).next().slideDown();
-    //     $(".accordion_info").not($(this).next()).slideUp();
-    // });
-
-    // $(".accordion").on("click",".item", function () {
-    //     $(this).addClass("active").siblings().removeClass("active");
-    // });
-
-
     return (
         <section className="accordion-section pb-0" style={{ backgroundImage: `url(images/background/17.jpg)` }}>
             <div className="container">
