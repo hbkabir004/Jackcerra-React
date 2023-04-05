@@ -5,6 +5,8 @@ import ConsultancyLayout from '../Layouts/ConsultancyLayout';
 import AboutPage from '../Pages/AboutPage';
 import ConsultancyHome from '../Pages/ConsultancyHome';
 import FAQ from '../Pages/FAQ';
+import Services01 from '../Pages/Services/Service01';
+import ServiceDetails from '../Pages/Services/ServiceDetails';
 import TeamPage from '../Pages/TeamPage';
 
 // Home Layouts02
@@ -24,30 +26,18 @@ export const routes = createBrowserRouter([
                 path: '/consultancy',
                 element: <ConsultancyHome/>
             },
-            // {
-            //     path: '/project',
-            //     element: <Projects01/>
-            // },
-            // {
-            //     path: '/project-2',
-            //     element: <Projects02/>
-            // },
-            // {
-            //     path: '/project-details',
-            //     element: <ProjectDetails/>
-            // },
-            // {
-            //     path: '/services',
-            //     element: <Services01/>
-            // },
-            // {
-            //     path: '/services-2',
-            //     element: <Services02/>
-            // },
-            // {
-            //     path: '/service-details',
-            //     element: <ServiceDetails/>
-            // },
+            {
+                path: '/service',
+                element: <Services01/>
+            },
+            {
+                path: '/service-2',
+                element: <Services01/>
+            },
+            {
+                path: '/service-details',
+                element: <ServiceDetails/>
+            },
             {
                 path: '/about',
                 element: <AboutPage/>
