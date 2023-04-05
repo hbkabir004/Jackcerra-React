@@ -4,6 +4,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import ConsultancyLayout from '../Layouts/ConsultancyLayout';
 import AboutPage from '../Pages/AboutPage';
 import ConsultancyHome from '../Pages/ConsultancyHome';
+import ContactPage from '../Pages/ContactPage';
 import FAQ from '../Pages/FAQ';
 import Services01 from '../Pages/Services/Service01';
 import ServiceDetails from '../Pages/Services/ServiceDetails';
@@ -62,10 +63,10 @@ export const routes = createBrowserRouter([
             //     path: '/blog-details',
             //     element: <BlogDetails/>
             // },
-            // {
-            //     path: '/contact',
-            //     element: <ContactPage/>
-            // },
+            {
+                path: '/contact',
+                element: <ContactPage/>
+            },
             // {
             //     path: '*',
             //     element: <ErrorPage/>
