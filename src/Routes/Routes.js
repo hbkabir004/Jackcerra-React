@@ -3,9 +3,13 @@ import { createBrowserRouter } from 'react-router-dom';
 // Consultancy Layouts
 import ConsultancyLayout from '../Layouts/ConsultancyLayout';
 import AboutPage from '../Pages/AboutPage';
-import ConsultancyHome from '../Pages/ConsultancyHome';
+import BlogDetailPage from '../Pages/Blogs/BlogDetailPage';
+import BlogPage01 from '../Pages/Blogs/BlogPage01';
+import BlogPage02 from '../Pages/Blogs/BlogPage02';
+import BlogPage03 from '../Pages/Blogs/BlogPage03';
 import ContactPage from '../Pages/ContactPage';
 import FAQ from '../Pages/FAQ';
+import ConsultancyHome from '../Pages/HomePages/ConsultancyHome';
 import Services01 from '../Pages/Services/Service01';
 import ServiceDetails from '../Pages/Services/ServiceDetails';
 import TeamPage from '../Pages/TeamPage';
@@ -51,18 +55,22 @@ export const routes = createBrowserRouter([
                 path: '/faq',
                 element: <FAQ/>
             },
-            // {
-            //     path: '/blog-1',
-            //     element: <Blog01/>
-            // },
-            // {
-            //     path: '/blog-2',
-            //     element: <Blog02/>
-            // },
-            // {
-            //     path: '/blog-details',
-            //     element: <BlogDetails/>
-            // },
+            {
+                path: '/blog',
+                element: <BlogPage01/>
+            },
+            {
+                path: '/blog-2',
+                element: <BlogPage02/>
+            },
+            {
+                path: '/blog-3',
+                element: <BlogPage03/>
+            },
+            {
+                path: '/blog-details',
+                element: <BlogDetailPage/>
+            },
             {
                 path: '/contact',
                 element: <ContactPage/>
