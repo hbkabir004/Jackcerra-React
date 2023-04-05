@@ -104,9 +104,9 @@ const Testimonials = (props) => {
                                     className="owl-stage-outer"
                                     modules={[Controller, Autoplay, Pagination]}
                                     autoplay={{
-                                        delay: 5000,
+                                        delay: 7000,
                                         disableOnInteraction: true,
-                                        speed: 100
+                                        speed: 50
                                     }}
                                     breakpoints={{
                                         640: {
