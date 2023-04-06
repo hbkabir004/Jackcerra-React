@@ -1,6 +1,15 @@
-import React from 'react';
+import $ from 'jquery';
+import React, { useEffect } from 'react';
 
 const Video = () => {
+    useEffect(() => {
+        var $ytvideoTrigger = $(".ytplay-btn");
+        $ytvideoTrigger.on("click", function (evt) {
+            $(".ytube-video").addClass("play");
+            $("#ytvideo")[0].src += "?autoplay=1";
+        });
+
+    }, []);
     return (
         <div class="video-post">
             <div class="ytube-video">

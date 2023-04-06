@@ -103,31 +103,31 @@ const ConsultancyHeader = () => {
                                             <li className="dropdown"><a href="/consultancy">Home</a>
                                                 <ul>
                                                     <li><a href="/consultancy">Home</a></li>
-                                                    <li><a href="../business/consultancy">Business</a></li>
-                                                    <li><a href="../insurance/consultancy">Insurance</a></li>
-                                                    <li><a href="../investment/consultancy">Investment</a></li>
+                                                    <li><a href="../business/">Business</a></li>
+                                                    <li><a href="../insurance/">Insurance</a></li>
+                                                    <li><a href="../investment/">Investment</a></li>
                                                 </ul>
                                             </li>
                                             <li className="dropdown"><a href="#">Pages</a>
                                                 <ul>
-                                                    <li><a href="/about">About Us</a></li>
-                                                    <li><a href="/team">Our Team</a></li>
-                                                    <li><a href="/faq">FAQ</a></li>
+                                                    <li><a href="/consultancy/about">About Us</a></li>
+                                                    <li><a href="/consultancy/team">Our Team</a></li>
+                                                    <li><a href="/consultancy/faq">FAQ</a></li>
                                                 </ul>
                                             </li>
                                             <li className="dropdown"><a href="#">Services</a>
                                                 <ul>
-                                                    <li><a href="/service">Service One</a></li>
-                                                    <li><a href="/service-2">Service Two</a></li>
-                                                    <li><a href="/service-details">Service Details</a></li>
+                                                    <li><a href="/consultancy/service">Service One</a></li>
+                                                    <li><a href="/consultancy/service-2">Service Two</a></li>
+                                                    <li><a href="/consultancy/service-details">Service Details</a></li>
                                                 </ul>
                                             </li>
                                             <li className="dropdown"><a href="#">Blog</a>
                                                 <ul>
-                                                    <li><a href="/blog">Blog Standard</a></li>
-                                                    <li><a href="/blog-2">Blog Grid</a></li>
-                                                    <li><a href="/blog-3">Blog Grid with Sidebar</a></li>
-                                                    <li><a href="/blog-details">Blog Details</a></li>
+                                                    <li><a href="/consultancy/blog">Blog Standard</a></li>
+                                                    <li><a href="/consultancy/blog-2">Blog Grid</a></li>
+                                                    <li><a href="/consultancy/blog-3">Blog Grid with Sidebar</a></li>
+                                                    <li><a href="/consultancy/blog-details">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="/contact">Contact</a></li>

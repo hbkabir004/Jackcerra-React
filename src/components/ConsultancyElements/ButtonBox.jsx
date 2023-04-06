@@ -1,6 +1,14 @@
 import React from 'react';
 
 const ButtonBox = () => {
+    // useEffect(() => {
+    //     var $ytvideoTrigger = $(".ytplay-btn");
+    //     $ytvideoTrigger.on("click", function (evt) {
+    //         $(".ytube-video").addClass("play");
+    //         $("#ytvideo")[0].src += "?autoplay=1";
+    //     });
+
+    // }, []);
     return (
         <div className="button-box d-flex align-items-center flex-wrap">
             <a href="#" className="btn">

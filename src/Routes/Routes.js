@@ -13,86 +13,91 @@ import ConsultancyHome from '../Pages/HomePages/ConsultancyHome';
 import Services01 from '../Pages/Services/Service01';
 import ServiceDetails from '../Pages/Services/ServiceDetails';
 import TeamPage from '../Pages/TeamPage';
+import BusinessHome from '../containers/Business/BusinessHome';
 
-// Home Layouts02
+// Business Layouts
 
 // Shared Layouts
 
 export const routes = createBrowserRouter([
     {
-        path: "/",
+        path: "/consultancy",
         element: <ConsultancyLayout/>,
         children: [
-            {
-                path: '/',
-                element: <ConsultancyHome/>
-            },
+            // {
+            //     path: '/',
+            //     element: <ConsultancyHome/>
+            // },
             {
                 path: '/consultancy',
                 element: <ConsultancyHome/>
             },
             {
-                path: '/service',
+                path: '/consultancy/service',
                 element: <Services01/>
             },
             {
-                path: '/service-2',
+                path: '/consultancy/service-2',
                 element: <Services01/>
             },
             {
-                path: '/service-details',
+                path: '/consultancy/service-details',
                 element: <ServiceDetails/>
             },
             {
-                path: '/about',
+                path: '/consultancy/about',
                 element: <AboutPage/>
             },
             {
-                path: '/team',
+                path: '/consultancy/team',
                 element: <TeamPage/>
             },
             {
-                path: '/faq',
+                path: '/consultancy/faq',
                 element: <FAQ/>
             },
             {
-                path: '/blog',
+                path: '/consultancy/blog',
                 element: <BlogPage01/>
             },
             {
-                path: '/blog-2',
+                path: '/consultancy/blog-2',
                 element: <BlogPage02/>
             },
             {
-                path: '/blog-3',
+                path: '/consultancy/blog-3',
                 element: <BlogPage03/>
             },
             {
-                path: '/blog-details',
+                path: '/consultancy/blog-details',
                 element: <BlogDetailPage/>
             },
             {
-                path: '/contact',
+                path: '/consultancy/contact',
                 element: <ContactPage/>
             },
             // {
             //     path: '*',
             //     element: <ErrorPage/>
             // }
+            {
+                path: '/consultancy/business',
+                element: <BusinessHome/>
+            },
         ]
     },
     // {
-    //     path: "/",
-    //     element: <HomeLayout02/>,
+    //     path: "/business",
+    //     element: <BusinessLayout/>,
     //     children: [
     //         {
-    //             path: '/home-2',
-    //             element: <Home02/>
+    //             path: '/business',
+    //             element: <BusinessHome/>
     //         },
-    //         {
-    //             path: '*',
-    //             element: <ErrorPage/>
-    //         }
+    //         // {
+    //         //     path: '*',
+    //         //     element: <ErrorPage/>
+    //         // }
     //     ]
     // },
 ])
