@@ -162,7 +162,7 @@ const ConsultancyHeader = () => {
                                         <i className="bi bi-list"></i>
                                     </button> */}
 
-                                    <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
+                                    <button className="d-lg-none d-block ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
                                     >
                                         <i className="bi bi-list"></i>
                                     </button>

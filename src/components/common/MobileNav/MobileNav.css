@@ -87,13 +87,13 @@
     visibility: hidden;
   }
   
-  .mr_menu_02 ul.main_menu {
+  .mr_menu_02 ul.main-menu {
     padding: 0px;
     margin: 0px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .mr_menu_02 ul.main_menu li {
+  .mr_menu_02 ul.main-menu li {
     border: 0;
     list-style: none;
     display: block;
@@ -104,7 +104,7 @@
     width: 100%;
   }
   
-  .mr_menu_02 ul.main_menu li a {
+  .mr_menu_02 ul.main-menu li a {
     list-style: none;
     position: relative;
     font-size: 15px;
@@ -120,11 +120,11 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .mr_menu_02 ul.main_menu li.current > a, .mr_menu_02 ul.main_menu li.active > a, .mr_menu_02 ul.main_menu li:hover > a {
+  .mr_menu_02 ul.main-menu li.current > a, .mr_menu_02 ul.main-menu li.active > a, .mr_menu_02 ul.main-menu li:hover > a {
     color: #FFA903;;
   }
   
-  .mr_menu_02 ul.main_menu li .submenu_opener {
+  .mr_menu_02 ul.main-menu li .submenu_opener {
     position: absolute;
     right: 0;
     top: 0;
@@ -140,13 +140,13 @@
     z-index: 5;
   }
   
-  .mr_menu_02 ul.main_menu li .submenu_opener i {
+  .mr_menu_02 ul.main-menu li .submenu_opener i {
     position: relative;
     display: block;
     transition: all 0.5s ease;
   }
   
-  .mr_menu_02 ul.main_menu li.nav_open > .submenu_opener i {
+  .mr_menu_02 ul.main-menu li.nav_open > .submenu_opener i {
     transform: rotate(90deg);
     animation: blinking 1.5s ease-in-out infinite;
   }
@@ -163,7 +163,7 @@
     }
   }
   
-  .mr_menu_02 ul.main_menu li ul {
+  .mr_menu_02 ul.main-menu li ul {
     position: relative;
     display: none;
     overflow: hidden;
