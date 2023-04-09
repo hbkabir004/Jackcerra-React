@@ -1,79 +1,79 @@
 import React from 'react';
-import { Autoplay, Pagination } from 'swiper';
+import { Autoplay, Controller, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionTitle02 from '../../components/ConsultancyElements/SectionTitle02';
 import TestimonialBlock from '../../components/ConsultancyElements/TestimonialBlock';
-const Testimonials = (props) => {
-    const TestimonialData = [
+const Testimonials02 = (props) => {
+    const TestimonialData02 = [
         {
             id: '1',
-            img: 'images/resource/reviewer-1.png',
+            img: '../images/resource/reviewer-1.png',
             tag: 'CEO, Bizzbreak Inc.',
             name: 'Trent Ballinger'
         },
         {
             id: '2',
-            img: 'images/resource/reviewer-2.png',
+            img: '../images/resource/reviewer-2.png',
             tag: 'Manager, PPS',
             name: 'Kevin Miller'
         },
         {
             id: '3',
-            img: 'images/resource/reviewer-3.png',
+            img: '../images/resource/reviewer-3.png',
             tag: 'CEO, Bizzbreak Inc.',
             name: 'Trent Ballinger'
         },
         {
             id: '4',
-            img: 'images/resource/reviewer-4.png',
+            img: '../images/resource/reviewer-4.png',
             tag: 'Manager, PPS',
             name: 'Kevin Miller'
         },
         {
             id: '5',
-            img: 'images/resource/reviewer-5.png',
+            img: '../images/resource/reviewer-5.png',
             tag: 'CEO, Bizzbreak Inc.',
             name: 'Trent Ballinger'
         },
         {
             id: '6',
-            img: 'images/resource/reviewer-6.png',
+            img: '../images/resource/reviewer-6.png',
             tag: 'Manager, PPS',
             name: 'Kevin Miller'
         },
         {
             id: '7',
-            img: 'images/resource/reviewer-1.png',
+            img: '../images/resource/reviewer-1.png',
             tag: 'CEO, Bizzbreak Inc.',
             name: 'Trent Ballinger'
         },
         {
             id: '8',
-            img: 'images/resource/reviewer-2.png',
+            img: '../images/resource/reviewer-2.png',
             tag: 'Manager, PPS',
             name: 'Kevin Miller'
         },
         {
             id: '9',
-            img: 'images/resource/reviewer-3.png',
+            img: '../images/resource/reviewer-3.png',
             tag: 'CEO, Bizzbreak Inc.',
             name: 'Trent Ballinger'
         },
         {
             id: '10',
-            img: 'images/resource/reviewer-4.png',
+            img: '../images/resource/reviewer-4.png',
             tag: 'Manager, PPS',
             name: 'Kevin Miller'
         },
         {
             id: '11',
-            img: 'images/resource/reviewer-5.png',
+            img: '../images/resource/reviewer-5.png',
             tag: 'CEO, Bizzbreak Inc.',
             name: 'Trent Ballinger'
         },
         {
             id: '12',
-            img: 'images/resource/reviewer-6.png',
+            img: '../images/resource/reviewer-6.png',
             tag: 'Manager, PPS',
             name: 'Kevin Miller'
         },
@@ -102,7 +102,7 @@ const Testimonials = (props) => {
                             <div className="testimonial-carousel-two owl-carousel owl-theme">
                                 <Swiper
                                     className="owl-stage-outer"
-                                    modules={[Autoplay, Pagination]}
+                                    modules={[Controller, Autoplay, Pagination]}
                                     autoplay={{
                                         delay: 7000,
                                         disableOnInteraction: true,
@@ -136,6 +136,7 @@ const Testimonials = (props) => {
                                         // },
                                     }}
                                     loop={true}
+                                    controller={{ inverse: true }}
                                     // spaceBetween={5}
                                     pagination={{
                                         el: '.testimonial-pagination',
@@ -145,7 +146,7 @@ const Testimonials = (props) => {
 
                                 >
                                     {
-                                        TestimonialData.map(data => <SwiperSlide><TestimonialBlock
+                                        TestimonialData02.map(data => <SwiperSlide><TestimonialBlock
                                             key={data.id}
                                             data={data}
                                         /></SwiperSlide>)
@@ -165,4 +166,4 @@ const Testimonials = (props) => {
     );
 };
 
-export default Testimonials;
+export default Testimonials02;

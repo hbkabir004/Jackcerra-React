@@ -1,6 +1,36 @@
 import React from 'react';
 
 const BusinessHeader = () => {
+    // Sticky Header
+    // window.onscroll = () => {
+    //     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+    //         document.querySelector('header').classList.add('sticky');
+    //     } else {
+    //         document.querySelector('header').classList.remove('sticky');
+    //     }
+    // }
+
+
+    // Hide header on scroll down
+    // let lastScroll = 800;
+    // window.onscroll = () => {
+    //     const currentScroll = window.pageYOffset;
+    //     if (currentScroll <= 800) {
+    //         document.querySelector('header').classList.remove('top-up');
+    //         return;
+    //     }
+
+    //     if (currentScroll > lastScroll) {
+
+    //         document.querySelector('header').classList.add('top-up');
+    //     }
+    //     else if (currentScroll < lastScroll) {
+    //         document.querySelector('header').classList.remove('top-up');
+    //     }
+    //     lastScroll = currentScroll;
+    // }
+
+
     return (
         <header className="main-header">
 
@@ -38,7 +68,7 @@ const BusinessHeader = () => {
 
                         <div className="logo-box">
                             {/* <!-- Logo --> */}
-                            <div className="logo"><a href="/business"><img src="images/logo-business.svg" alt="img" title="" /></a></div>
+                            <div className="logo"><a href="/business"><img src="../images/logo-business.svg" alt="img" title="" /></a></div>
                         </div>
                         <div className="nav-outer d-flex align-items-center">
 
@@ -46,9 +76,9 @@ const BusinessHeader = () => {
                             <nav className="main-menu d-none d-lg-block">
                                 <div className="navbar-collapse collapse clearfix" >
                                     <ul className="navigation clearfix">
-                                        <li className="dropdown"><a href="index.html">Home</a>
+                                        <li className="dropdown"><a href="/business">Home</a>
                                             <ul>
-                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="/business">Home</a></li>
                                                 <li><a href="../consultancy">Consultancy</a></li>
                                                 <li><a href="../insurance">Insurance</a></li>
                                                 <li><a href="../investment">Investment</a></li>
@@ -76,7 +106,7 @@ const BusinessHeader = () => {
                                                 <li><a href="/blog-details">Blog Details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/contact.html">Contact</a></li>
+                                        <li><a href="/contact">Contact</a></li>
                                     </ul>
                                 </div>
 
@@ -97,9 +127,10 @@ const BusinessHeader = () => {
                                 </div>
 
                                 {/* <!-- Responsive Menu --> */}
-                                <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button">
-                                    <i className="bi bi-list"></i>
-                                </button>
+                                {/* <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button">
+                                        <i className="bi bi-list"></i>
+                                    </button> */}
+
                             </div>
                             {/* <!-- End Outer Box --> */}
 

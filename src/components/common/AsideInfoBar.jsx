@@ -1,13 +1,15 @@
 import React from 'react';
 
-const AsideInfoBar = ({ handleAddCss, isAdd }) => {
+const AsideInfoBar = ({ handleAddCss, isAdd, data }) => {
+
+    const { href, logo } = data;
 
     return (
         <div style={!isAdd ? { left: '0px' } : { left: '-500px' }} className="aside_info">
             <div onClick={handleAddCss} className="aside_close"><i className="fa fa-close"></i></div>
             <div className="logo-side">
-                <a href="/consultancy">
-                    <img src="images/logo.svg" alt="img" />
+                <a href={href}>
+                    <img src={logo} alt="img" />
                 </a>
             </div>
             <div className="side-about-info">

@@ -10,8 +10,10 @@ import { routes } from './Routes/Routes';
 import './assets/css/main.css';
 
 function App() {
+  // const pathPattern = usePathPattern(); 
+
   return (
-    <div className="page-wrapper">
+    <div >
       <RouterProvider router={routes} />
     </div>
   );

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
 
-const Video = () => {
+const Video = (props) => {
     useEffect(() => {
         var $ytvideoTrigger = $(".ytplay-btn");
         $ytvideoTrigger.on("click", function (evt) {
@@ -13,10 +13,10 @@ const Video = () => {
     return (
         <div class="video-post">
             <div class="ytube-video">
-                <iframe id="ytvideo" src="https://www.youtube.com/embed/fEErySYqItI" allow="autoplay;" allowfullscreen=""></iframe>
+                <iframe id="ytvideo" src={props.link} allow="autoplay;" allowfullscreen=""></iframe>
                 <div class="post-content">
                     <div class="ytplay-btn"><i class="fa fa-play"></i></div>
-                    <img src="images/background/8.jpg" alt="img" />
+                    <img src={props.img} alt="img" />
                 </div>
             </div>
         </div>

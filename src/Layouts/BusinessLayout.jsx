@@ -7,15 +7,15 @@ import BusinessHeader from '../containers/Business/BusinessHeader';
 
 const BusinessLayout = () => {
     return (
-        <>
-            <>
+        <div className='business'>
+            <div className="page-wrapper">
                 <BusinessHeader />
                 <Outlet />
                 <BusinessFooter />
 
-            </>
+            </div>
             <ScrollToTop />
-        </>
+        </div>
     );
 };
 

@@ -13,92 +13,118 @@ import ConsultancyHome from '../Pages/HomePages/ConsultancyHome';
 import Services01 from '../Pages/Services/Service01';
 import ServiceDetails from '../Pages/Services/ServiceDetails';
 import TeamPage from '../Pages/TeamPage';
-import BusinessHome from '../containers/Business/BusinessHome';
 
 // Business Layouts
+import BusinessLayout from '../Layouts/BusinessLayout';
+import BusinessHome from '../containers/Business/BusinessHome';
 
-// Shared Layouts
+// InvestMent Layouts
+import InvestmentLayout from '../Layouts/InvestmentLayout';
+import InvestmentHome from '../containers/Investment/InvestmentHome';
+
+// Insurance Layouts
+import InsuranceLayout from '../Layouts/InsuranceLayout';
+import InsuranceHome from '../containers/Insurance/InsuranceHome';
 
 export const routes = createBrowserRouter([
     {
-        path: "/consultancy",
-        element: <ConsultancyLayout/>,
+            path: '/',
+            element: <ConsultancyLayout />,
+            children: [
+                {
+                    path: '/',
+                    element: <ConsultancyHome />
+                },
+                {
+                    path: '/consultancy',
+                    element: <ConsultancyHome />
+                },
+                {
+                    path: '/service',
+                    element: <Services01 />
+                },
+                {
+                    path: '/service-2',
+                    element: <Services01 />
+                },
+                {
+                    path: '/service-details',
+                    element: <ServiceDetails />
+                },
+                {
+                    path: '/about',
+                    element: <AboutPage />
+                },
+                {
+                    path: '/team',
+                    element: <TeamPage />
+                },
+                {
+                    path: '/faq',
+                    element: <FAQ />
+                },
+                {
+                    path: '/blog',
+                    element: <BlogPage01 />
+                },
+                {
+                    path: '/blog-2',
+                    element: <BlogPage02 />
+                },
+                {
+                    path: '/blog-3',
+                    element: <BlogPage03 />
+                },
+                {
+                    path: '/blog-details',
+                    element: <BlogDetailPage />
+                },
+                {
+                    path: '/contact',
+                    element: <ContactPage />
+                },
+            ]
+        
+        // children: [
+           
+            
+
+        //     // {
+        //     //     path: '*',
+        //     //     element: <ErrorPage/>
+        //     // }
+        // ]
+    },
+
+    {
+        path: "/business",
+        element: <BusinessLayout />,
         children: [
-            // {
-            //     path: '/',
-            //     element: <ConsultancyHome/>
-            // },
             {
-                path: '/consultancy',
-                element: <ConsultancyHome/>
-            },
-            {
-                path: '/consultancy/service',
-                element: <Services01/>
-            },
-            {
-                path: '/consultancy/service-2',
-                element: <Services01/>
-            },
-            {
-                path: '/consultancy/service-details',
-                element: <ServiceDetails/>
-            },
-            {
-                path: '/consultancy/about',
-                element: <AboutPage/>
-            },
-            {
-                path: '/consultancy/team',
-                element: <TeamPage/>
-            },
-            {
-                path: '/consultancy/faq',
-                element: <FAQ/>
-            },
-            {
-                path: '/consultancy/blog',
-                element: <BlogPage01/>
-            },
-            {
-                path: '/consultancy/blog-2',
-                element: <BlogPage02/>
-            },
-            {
-                path: '/consultancy/blog-3',
-                element: <BlogPage03/>
-            },
-            {
-                path: '/consultancy/blog-details',
-                element: <BlogDetailPage/>
-            },
-            {
-                path: '/consultancy/contact',
-                element: <ContactPage/>
-            },
-            // {
-            //     path: '*',
-            //     element: <ErrorPage/>
-            // }
-            {
-                path: '/consultancy/business',
-                element: <BusinessHome/>
+                path: '/business',
+                element: <BusinessHome />
             },
         ]
     },
-    // {
-    //     path: "/business",
-    //     element: <BusinessLayout/>,
-    //     children: [
-    //         {
-    //             path: '/business',
-    //             element: <BusinessHome/>
-    //         },
-    //         // {
-    //         //     path: '*',
-    //         //     element: <ErrorPage/>
-    //         // }
-    //     ]
-    // },
+    {
+        path: "/investment",
+        element: <InvestmentLayout />,
+        children: [
+            {
+                path: '/investment',
+                element: <InvestmentHome />
+            },
+        ]
+    },
+    {
+        path: "/insurance",
+        element: <InsuranceLayout />,
+        children: [
+            {
+                path: '/insurance',
+                element: <InsuranceHome />
+            },
+        ]
+    },
 ])
 
