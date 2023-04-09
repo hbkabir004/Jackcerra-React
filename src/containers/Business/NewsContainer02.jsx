@@ -1,5 +1,5 @@
 import React from 'react';
-import { Autoplay, Controller, Navigation } from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import NewsBlock from '../../components/ConsultancyElements/NewsBlock';
 import SectionTitle from '../../components/ConsultancyElements/SectionTitle';
@@ -116,7 +116,7 @@ const NewsContainer02 = () => {
 
                     <Swiper
                         className="owl-stage-outer"
-                        modules={[Navigation, Controller, Autoplay]}
+                        modules={[Navigation, Autoplay]}
                         autoplay={{
                             delay: 5000,
                             disableOnInteraction: true,

@@ -79,34 +79,32 @@ const Testimonials02 = (props) => {
         },
     ];
     return (
-        <section className="testimonial-section two" style={{ backgroundImage: `url(images/background/13.jpg)` }}>
+        <section className="testimonial-section">
             <div className="container">
-                <div className="row d-block d-lg-flex clearfix flex-nowrap">
+                <div className="row clearfix">
 
                     {/* <!-- Title Column --> */}
-                    <div className="title-column col-xl-4 col-lg-4 col-md-12 col-sm-12 pe-0">
+                    <div className="title-column col-lg-4 col-md-12 col-sm-12 px-lg-0">
                         <div className="inner-column">
                             <SectionTitle02
                                 title="CLIENTS TESTIMONIAL"
                                 header="What our Clients"
                                 ext="say about Us"
-                                textColor={props.textColor}
                             />
-
                         </div>
                     </div>
 
                     {/* <!-- Carousel Column --> */}
-                    <div className="carousel-column">
+                    <div className="carousel-column col-lg-8 col-md-12 col-sm-12">
                         <div className="inner-column">
-                            <div className="testimonial-carousel-two owl-carousel owl-theme">
+                            <div className="testimonial-carousel owl-carousel owl-theme">
                                 <Swiper
                                     className="owl-stage-outer"
                                     modules={[Controller, Autoplay, Pagination]}
                                     autoplay={{
-                                        delay: 7000,
+                                        delay: 5000,
                                         disableOnInteraction: true,
-                                        speed: 50
+                                        speed: 100
                                     }}
                                     breakpoints={{
                                         640: {
@@ -122,26 +120,15 @@ const Testimonials02 = (props) => {
                                             slidesPerView: 1,
                                         },
 
-                                        // 640: {
-                                        //     width: 640,
-                                        //     slidesPerView: 1,
-                                        // },
-                                        // 768: {
-                                        //     width: 768,
-                                        //     slidesPerView: 2,
-                                        // },
-                                        // 992: {
-                                        //     width: 992,
-                                        //     slidesPerView: 3,
-                                        // },
+
                                     }}
                                     loop={true}
                                     controller={{ inverse: true }}
                                     // spaceBetween={5}
                                     pagination={{
-                                        el: '.testimonial-pagination',
+                                        el: '.owl-dots',
                                         clickable: true,
-                                        dynamicBullets: true,
+                                        // dynamicBullets: true,
                                     }}
 
                                 >
@@ -154,7 +141,17 @@ const Testimonials02 = (props) => {
 
                                 </Swiper>
 
-
+                                {/* <div className="owl-dots">
+                                    <div className="owl-dot">
+                                        <span></span>
+                                    </div>
+                                    <div className="owl-dot">
+                                        <span></span>
+                                    </div>
+                                    <div className="owl-dot active">
+                                        <span></span>
+                                    </div>
+                                </div> */}
 
                             </div>
                         </div>

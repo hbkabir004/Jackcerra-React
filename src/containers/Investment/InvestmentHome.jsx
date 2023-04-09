@@ -19,10 +19,7 @@ const InvestmentHome = () => {
             <CTA />
             <InvestmentProcess />
             <InvestmentChart />
-
-
-            ,<InvestmentTestimonials />
-
+            <InvestmentTestimonials />
             <NewsContainer02 />
         </>
     );
