@@ -1,10 +1,44 @@
 import React from 'react';
+import { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import CaseBlock from '../../components/InvestmentElements/CaseBlock';
 
 const InvestmentCaseStudy = () => {
+    const InvestmentServiceData = [
+        {
+            id: '1',
+            img: '../images/case/1.jpg',
+            title: 'Business Growth',
+            text: 'Market Research'
+        },
+        {
+            id: '2',
+            img: '../images/case/2.jpg',
+            title: 'Data Analysis in MaxQDA',
+            text: 'Business Analysis'
+        },
+        {
+            id: '3',
+            img: '../images/case/3.jpg',
+            title: 'Marketing Plan for Marico',
+            text: 'Marketing Analysis'
+        },
+        {
+            id: '4',
+            img: '../images/case/2.jpg',
+            title: 'Data Analysis in MaxQDA',
+            text: 'Business Analysis'
+        },
+        {
+            id: '5',
+            img: '../images/case/3.jpg',
+            title: 'Marketing Plan for Marico',
+            text: 'Marketing Analysis'
+        },
+    ];
     return (
         <section className="case-study-section" style={{ backgroundImage: `url(../images/background/20.jpg)` }} >
             <div className="container">
-                {/* <!-- Sec Title --> */}
                 {/* <!-- Sec Title --> */}
                 <div className="sec-title text-center">
                     <div className="title"> <div className="separator"></div> Case Studies</div>
@@ -16,111 +50,59 @@ const InvestmentCaseStudy = () => {
 
                 <div className="case-list">
                     <div className="case-carousel owl-carousel owl-theme">
-                        {/* <!-- Case Block Start --> */}
-                        <div className="case-block">
-                            <div className="inner-box">
-                                <div className="block-image">
-                                    <img src="../images/case/1.jpg" alt="img" />
-                                    <div className="block-bottom">
-                                        <div className="front text-center">
-                                            <h5><a href="service-details.html">Product Launch of P&G</a></h5>
-                                            <div className="text">Market Research</div>
-                                        </div>
 
-                                        <div className="back">
-                                            <h5><a href="service-details.html">Product Launch of P&G</a></h5>
-                                            <div className="text">Market Research</div>
-                                            <a href="service-details.html" className="read-more"><span><i className="visible bi bi-arrow-up-right-square"></i> <i className="hidden bi bi-arrow-up-right-square"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Swiper
+                            className="owl-stage-outer"
+                            modules={[Pagination]}
+                            // autoplay={{
+                            //     delay: 7000,
+                            //     disableOnInteraction: true,
+                            //     speed: 50
+                            // }}
+                            breakpoints={{
+                                640: {
+                                    width: 381,
+                                    slidesPerView: 1,
+                                },
+                                768: {
+                                    width: 408,
+                                    slidesPerView: 2,
+                                },
+                                992: {
+                                    width: 442,
+                                    slidesPerView: 1,
+                                },
 
-                        {/* <!-- Case Block Start --> */}
-                        <div className="case-block">
-                            <div className="inner-box">
-                                <div className="block-image">
-                                    <img src="../images/case/2.jpg" alt="img" />
-                                    <div className="block-bottom">
-                                        <div className="front text-center">
-                                            <h5><a href="service-details.html">Data Analysis in MaxQDA</a></h5>
-                                            <div className="text">Business Analysis</div>
-                                        </div>
+                                // 640: {
+                                //     width: 640,
+                                //     slidesPerView: 1,
+                                // },
+                                // 768: {
+                                //     width: 768,
+                                //     slidesPerView: 2,
+                                // },
+                                // 992: {
+                                //     width: 992,
+                                //     slidesPerView: 3,
+                                // },
+                            }}
+                            loop={true}
+                            // spaceBetween={5}
+                            pagination={{
+                                el: '.testimonial-pagination',
+                                clickable: true,
+                                dynamicBullets: true,
+                            }}
 
-                                        <div className="back">
-                                            <h5><a href="service-details.html">Data Analysis in MaxQDA</a></h5>
-                                            <div className="text">Business Analysis</div>
-                                            <a href="service-details.html" className="read-more"><span><i className="visible bi bi-arrow-up-right-square"></i> <i className="hidden bi bi-arrow-up-right-square"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        >
+                            {
+                                InvestmentServiceData.map(data => <SwiperSlide><CaseBlock
+                                    key={data.id}
+                                    data={data}
+                                /></SwiperSlide>)
+                            }
 
-                        {/* <!-- Case Block Start --> */}
-                        <div className="case-block">
-                            <div className="inner-box">
-                                <div className="block-image">
-                                    <img src="../images/case/3.jpg" alt="img" />
-                                    <div className="block-bottom">
-                                        <div className="front text-center">
-                                            <h5><a href="service-details.html">Marketing Plan for Marico</a></h5>
-                                            <div className="text">Marketing Analysis</div>
-                                        </div>
-
-                                        <div className="back">
-                                            <h5><a href="service-details.html">Marketing Plan for Marico</a></h5>
-                                            <div className="text">Marketing Analysis</div>
-                                            <a href="service-details.html" className="read-more"><span><i className="visible bi bi-arrow-up-right-square"></i> <i className="hidden bi bi-arrow-up-right-square"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* <!-- Case Block Start --> */}
-                        <div className="case-block">
-                            <div className="inner-box">
-                                <div className="block-image">
-                                    <img src="../images/case/2.jpg" alt="img" />
-                                    <div className="block-bottom">
-                                        <div className="front text-center">
-                                            <h5><a href="service-details.html">Data Analysis in MaxQDA</a></h5>
-                                            <div className="text">Business Analysis</div>
-                                        </div>
-
-                                        <div className="back">
-                                            <h5><a href="service-details.html">Data Analysis in MaxQDA</a></h5>
-                                            <div className="text">Business Analysis</div>
-                                            <a href="service-details.html" className="read-more"><span><i className="visible bi bi-arrow-up-right-square"></i> <i className="hidden bi bi-arrow-up-right-square"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* <!-- Case Block Start --> */}
-                        <div className="case-block">
-                            <div className="inner-box">
-                                <div className="block-image">
-                                    <img src="../images/case/3.jpg" alt="img" />
-                                    <div className="block-bottom">
-                                        <div className="front text-center">
-                                            <h5><a href="service-details.html">Marketing Plan for Marico</a></h5>
-                                            <div className="text">Marketing Analysis</div>
-                                        </div>
-
-                                        <div className="back">
-                                            <h5><a href="service-details.html">Marketing Plan for Marico</a></h5>
-                                            <div className="text">Marketing Analysis</div>
-                                            <a href="service-details.html" className="read-more"><span><i className="visible bi bi-arrow-up-right-square"></i> <i className="hidden bi bi-arrow-up-right-square"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        </Swiper>
                     </div>
                 </div>
             </div>
