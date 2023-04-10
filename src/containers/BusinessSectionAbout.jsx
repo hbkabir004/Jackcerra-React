@@ -12,7 +12,7 @@ const BusinessSectionAbout = () => {
                     <h1>We <span>consult</span> our clients to <span>strengthen</span> decision making & understanding for their <span>businesses</span> and upcomming <span>ventures</span></h1>
                 </div>
                 <div class="inner-container">
-                    <Video />
+                    <Video img='images/background/8.jpg' link='https://www.youtube.com/embed/fEErySYqItI' />
                 </div>
             </div>
         </section>
