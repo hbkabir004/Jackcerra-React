@@ -3,6 +3,7 @@ import ContactForm02 from '../../components/BusinessElements/ContactForm02';
 import TeamContainer02 from '../Business/TeamContainer02';
 import BusinessIdeas from './BusinessIdeas';
 import BusinessProcess from './BusinessProcess';
+import BusinessServices from './BusinessServices';
 import NewsContainer02 from './NewsContainer02';
 import Testimonials02 from './Testimonials02';
 
@@ -52,79 +53,12 @@ const BusinessHome = () => {
                 </div>
             </div>
 
-
-
-            <section className="home-services-section p-0">
-                <div className="container">
-
-                    <div className="blocks-column">
-                        <div className="inner-column">
-                            <div className="row row-cols-sm-3 row-cols-md-4 row-cols-lg-5 align-items-center justify-content-center">
-
-                                {/* <!-- Service Block --> */}
-                                <div className="col p-0 mb-3">
-                                    <div className="service-block">
-                                        <div className="inner-box">
-                                            <div className="icon"><img src="../images/icons/1.png" alt="" /></div>
-                                            <h5><a href="service-details.html">Growth Consultation</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col p-0 mb-3">
-                                    <div className="service-block">
-                                        <div className="inner-box">
-                                            <div className="icon"><img src="../images/icons/2.png" alt="" /></div>
-                                            <h5><a href="service-details.html">Marketing Consultation</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col p-0 mb-3">
-                                    <div className="service-block">
-                                        <div className="inner-box">
-                                            <div className="icon"><img src="../images/icons/3.png" alt="" /></div>
-                                            <h5><a href="service-details.html">Digital Marketing</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col p-0 mb-3">
-                                    <div className="service-block">
-                                        <div className="inner-box">
-                                            <div className="icon"><img src="../images/icons/4.png" alt="" /></div>
-                                            <h5><a href="service-details.html">Leadership Strategy</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col p-0 mb-3">
-                                    <div className="service-block">
-                                        <div className="inner-box">
-                                            <div className="icon"><img src="../images/icons/5.png" alt="" /></div>
-                                            <h5><a href="service-details.html">Public Relation</a></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!-- End Services Section --> */}
-
-
+            <BusinessServices />
             <BusinessProcess />
-
             <BusinessIdeas />
-
             <TeamContainer02 />
-
             <ContactForm02 />
-
             <NewsContainer02 />
-
             <Testimonials02 />
         </>
     );

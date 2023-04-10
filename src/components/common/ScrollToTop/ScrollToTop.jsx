@@ -1,8 +1,10 @@
 import React from 'react';
 import './ScrollToTop.css';
+// import $ from 'jquery';
 
 const ScrollToTop = () => {
     // useEffect(() => {
+    //     // Page scroll progress 
     //     var e = document.querySelector(".progress-wrap path"),
     //         t = e.getTotalLength();
     //     (e.style.transition = e.style.WebkitTransition = "none"),
@@ -25,6 +27,7 @@ const ScrollToTop = () => {
     //         });
 
     // }, []);
+
     return (
         <div class="progress-wrap active-progress">
             <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
