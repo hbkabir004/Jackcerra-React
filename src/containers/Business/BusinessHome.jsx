@@ -1,7 +1,6 @@
 import React from 'react';
 import ContactForm02 from '../../components/BusinessElements/ContactForm02';
 import TeamContainer02 from '../Business/TeamContainer02';
-import BusinessHeader from './BusinessHeader';
 import BusinessIdeas from './BusinessIdeas';
 import BusinessProcess from './BusinessProcess';
 import NewsContainer02 from './NewsContainer02';
@@ -10,7 +9,6 @@ import Testimonials02 from './Testimonials02';
 const BusinessHome = () => {
     return (
         <>
-            <BusinessHeader />
             {/* <!-- Slider Section --> */}
             <div class="third-slider">
                 <div class="main-slider-carousel owl-carousel owl-theme">

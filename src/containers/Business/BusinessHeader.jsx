@@ -31,6 +31,15 @@ const BusinessHeader = () => {
     // }
 
 
+    // Sticky Header
+    window.onscroll = () => {
+        if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+            document.querySelector('header').classList.add('sticky');
+        } else {
+            document.querySelector('header').classList.remove('sticky');
+        }
+    }
+
     return (
         <header className="main-header">
 
