@@ -1,12 +1,24 @@
 import React from 'react';
+import { Autoplay, EffectFade } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const demo = () => {
+const HomeSliders04 = () => {
     return (
-        <>
-          <div className="fourth-slider">
-                <div className="main-slider-carousel owl-carousel owl-theme">
-
-                    {/* <!-- Slide One --> */}
+        <div className="fourth-slider">
+            {/* <div > */}
+            <Swiper
+                className="main-slider-carousel owl-carousel owl-theme"
+                modules={[Autoplay, EffectFade]}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: true,
+                    speed: 100
+                }}
+                effect={"fade"}
+                loop={true}
+            >
+                {/* <!-- Slide One --> */}
+                <SwiperSlide>
                     <div className="slide">
                         <div className="container">
                             <div className="slide-inner">
@@ -48,9 +60,10 @@ const demo = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <!-- End Slide One -->  */}
+                </SwiperSlide>
 
-                    {/* <!-- Slide Two --> */}
+
+                <SwiperSlide>
                     <div className="slide">
                         <div className="container">
                             <div className="slide-inner">
@@ -92,12 +105,11 @@ const demo = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <!-- End Slide Two -->  */}
-
-                </div>
-            </div>   
-        </>
+                </SwiperSlide>
+            </Swiper>
+            {/* </div> */}
+        </div>
     );
 };
 
-export default demo;
+export default HomeSliders04;

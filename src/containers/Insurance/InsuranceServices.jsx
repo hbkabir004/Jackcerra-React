@@ -54,7 +54,7 @@ const InsuranceServices = () => {
         },
     ];
     return (
-        <section className="home-services-section" style={{ backgroundImage: `url(../images/background/27.jpg)` }} >
+        <section className="home-services-section" style={{ backgroundImage: `url(../images/background/27.jpg)`, overflow: 'hidden' }} >
             <div className="container">
                 <div className="sec-title centered">
                     <div className="title">Our Services</div>

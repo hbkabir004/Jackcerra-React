@@ -30,18 +30,17 @@ const MainSliders = () => {
         },
     ];
     return (
-        <section className="main-slider p-0">
+        <section className="main-slider pt-5">
             {/* <div className="main-slider-carousel owl-carousel owl-theme"> */}
 
             <Swiper
-                // className="main-slider-carousel owl-carousel owl-theme"
-                // style={{ transform: `translate3d(-3804px, 0px, 0px)` }, { transition: `all 0s ease 0s` }, { width: `13314px` }}
+                className="main-slider-carousel owl-carousel owl-theme"
                 modules={[Controller, Autoplay]}
-                // autoplay={{
-                //     delay: 5000,
-                //     disableOnInteraction: true,
-                //     speed: 100
-                // }}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: true,
+                    speed: 100
+                }}
                 slidesPerView={1}
                 loop={true}
                 controller={{ inverse: true }}

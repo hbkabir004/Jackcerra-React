@@ -6,7 +6,6 @@ const AboutPage = () => {
     return (
         <div className='mt-5'>
             <PageHeader title='About Us' active='ABOUT' routeClass='d-none' />
-
             <AboutPageContainer />
         </div>
     );

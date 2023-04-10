@@ -1,5 +1,6 @@
 import React from 'react';
 import NewsContainer from '../Consultancy/NewsContainer';
+import HomeSliders04 from './HomeSliders04';
 import InsuranceAbout from './InsuranceAbout';
 import InsuranceCaseStudy from './InsuranceCaseStudy';
 import InsuranceContact from './InsuranceContact';
@@ -9,10 +10,7 @@ import InsuranceTestimonials from './InsuranceTestimonials';
 const InsuranceHome = () => {
     return (
         <>
-            {/* <!-- Slider Section --> */}
-            {/* <div className='mb-5 mt-5'></div> */}
-            {/* <!-- End Slider Section --> */}
-
+            <HomeSliders04 />
             <InsuranceCaseStudy />
             <InsuranceServices />
             <InsuranceAbout />

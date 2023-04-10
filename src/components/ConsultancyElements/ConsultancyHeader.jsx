@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AsideInfoBar from '../common/AsideInfoBar';
+import MobileNav from '../common/MobileNav/MobileNav';
 
 const ConsultancyHeader = () => {
     const ConsultancyAsideData =
@@ -162,7 +163,7 @@ const ConsultancyHeader = () => {
                                         <i className="bi bi-list"></i>
                                     </button> */}
 
-                                    <button className="d-lg-none d-block ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
+                                    <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
                                     >
                                         <i className="bi bi-list"></i>
                                     </button>
@@ -180,7 +181,7 @@ const ConsultancyHeader = () => {
             </header>
 
             <AsideInfoBar handleAddCss={handleAddCss} isAdd={isAdd} data={ConsultancyAsideData} />
-            {/* <MobileNav /> */}
+            <MobileNav />
         </ >
     );
 };

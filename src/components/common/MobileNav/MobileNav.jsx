@@ -29,7 +29,7 @@ const Header02Nav = () => {
 
         function menuClickAction() {
             // Sub-Menu Open On-Click
-            $('.mr_menu_02 .mr_navmenu ul.main-menu .navbar-collapse.collapse.clearfix .navigation.clearfix li.dropdown').append($("<span class='submenu_opener d-xl-none'><i class='bi-arrow-right'></i></span>"));
+            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span class='submenu_opener d-xl-none'><i class='bi-arrow-right'></i></span>"));
             $('.mr_menu_02 .main-menu li.dropdown .submenu_opener').on("click", function (e) {
                 $(this).parent().toggleClass('nav_open');
                 $(this).siblings('ul').slideToggle();

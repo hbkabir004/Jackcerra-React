@@ -1,5 +1,5 @@
 import React from 'react';
-import { Autoplay, Controller, Pagination } from 'swiper';
+import { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionTitle02 from '../../components/ConsultancyElements/SectionTitle02';
 import TestimonialBlock from '../../components/ConsultancyElements/TestimonialBlock';
@@ -100,12 +100,13 @@ const Testimonials02 = (props) => {
                             <div className="testimonial-carousel owl-carousel owl-theme">
                                 <Swiper
                                     className="owl-stage-outer"
-                                    modules={[Controller, Autoplay, Pagination]}
+                                    modules={[Autoplay, Pagination]}
                                     autoplay={{
                                         delay: 5000,
                                         disableOnInteraction: true,
                                         speed: 100
                                     }}
+
                                     breakpoints={{
                                         640: {
                                             width: 381,
@@ -123,7 +124,6 @@ const Testimonials02 = (props) => {
 
                                     }}
                                     loop={true}
-                                    controller={{ inverse: true }}
                                     // spaceBetween={5}
                                     pagination={{
                                         el: '.owl-dots',

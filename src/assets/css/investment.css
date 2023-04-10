@@ -359,6 +359,7 @@
 .why-choose-section .image-column {
     position: relative;
     align-self: end;
+    overflow: hidden;
 }
 .why-choose-section .image-column::before {
     content: url('../images/resource/circle-layer-3.png');
