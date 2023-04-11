@@ -26,6 +26,9 @@ import InvestmentHome from '../containers/Investment/InvestmentHome';
 import InsuranceLayout from '../Layouts/InsuranceLayout';
 import InsuranceHome from '../containers/Insurance/InsuranceHome';
 
+// Shared Layout
+import ErrorPage from '../Pages/ErrorPage/ErrorPage';
+
 export const routes = createBrowserRouter([
     {
             path: '/',
@@ -83,17 +86,11 @@ export const routes = createBrowserRouter([
                     path: '/contact',
                     element: <ContactPage />
                 },
+                {
+                    path: '*',
+                    element: <ErrorPage/>
+                }
             ]
-        
-        // children: [
-           
-            
-
-        //     // {
-        //     //     path: '*',
-        //     //     element: <ErrorPage/>
-        //     // }
-        // ]
     },
 
     {
@@ -104,6 +101,10 @@ export const routes = createBrowserRouter([
                 path: '/business',
                 element: <BusinessHome />
             },
+            {
+                path: '*',
+                element: <ErrorPage/>
+            }
         ]
     },
     {
@@ -114,6 +115,10 @@ export const routes = createBrowserRouter([
                 path: '/investment',
                 element: <InvestmentHome />
             },
+            {
+                path: '*',
+                element: <ErrorPage/>
+            }
         ]
     },
     {
@@ -124,6 +129,10 @@ export const routes = createBrowserRouter([
                 path: '/insurance',
                 element: <InsuranceHome />
             },
+            {
+                path: '*',
+                element: <ErrorPage/>
+            }
         ]
     },
 ])

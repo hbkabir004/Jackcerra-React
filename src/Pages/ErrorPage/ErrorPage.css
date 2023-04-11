@@ -1,0 +1,19 @@
+.error-page .error-content .heading {
+    font-size: calc(1.925rem + 6.94286vw);
+    font-weight: 700;
+    line-height: calc(1.825rem + 5.91429vw);
+    color: #1c2539;
+    text-shadow: 2px 5px red;
+  }
+  
+  @media (min-width: 1400px) {
+    .error-page .error-content .heading {
+      font-size: 8rem;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .error-page .error-content .heading {
+      line-height: 7rem;
+    }
+  }
