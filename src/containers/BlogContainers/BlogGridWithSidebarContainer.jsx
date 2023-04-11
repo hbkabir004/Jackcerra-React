@@ -57,12 +57,12 @@ const BlogGridWithSidebarContainer = () => {
     ];
 
     return (
-        <section class="news-section">
-            <div class="container">
+        <section className="news-section">
+            <div className="container">
 
-                <div class="row">
-                    <div class="col-lg-8 col-md-7">
-                        <div class="row">
+                <div className="row">
+                    <div className="col-lg-8 col-md-7">
+                        <div className="row">
                             {
                                 BlogGridData.map(data => <BlogCard02
                                     key={data.id}

@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const BusinessSliders = () => {
     return (
-        <div class="third-slider">
-            <div class="main-slider-carousel owl-carousel owl-theme">
+        <div className="third-slider">
+            <div className="main-slider-carousel owl-carousel owl-theme">
 
                 <Swiper
                     modules={[Autoplay, EffectFade]}
@@ -21,31 +21,31 @@ const BusinessSliders = () => {
 
                     {/* <!-- Slide One --> */}
                     <SwiperSlide>
-                        <div class="slide">
-                            <div class="container">
-                                <div class="slide-inner">
-                                    <div class="image-layer" style={{ backgroundImage: `url(../images/slider/8.jpg)` }}></div>
-                                    <div class="row clearfix align-items-center">
+                        <div className="slide">
+                            <div className="container">
+                                <div className="slide-inner">
+                                    <div className="image-layer" style={{ backgroundImage: `url(../images/slider/8.jpg)` }}></div>
+                                    <div className="row clearfix align-items-center">
 
                                         {/* <!-- Content Column --> */}
-                                        <div class="content-column col-lg-6 col-md-7 col-sm-12">
-                                            <div class="inner-column">
-                                                <div class="title">Intelligent Decision Making</div>
+                                        <div className="content-column col-lg-6 col-md-7 col-sm-12">
+                                            <div className="inner-column">
+                                                <div className="title">Intelligent Decision Making</div>
                                                 <h1>As a <span>Business Firm</span> <br /> We are ready to set Big Milestones</h1>
-                                                <div class="options-box">
+                                                <div className="options-box">
                                                     {/* <!-- Button Box --> */}
-                                                    <div class="button-box d-flex flex-wrap">
-                                                        <a href="#" class="btn">
-                                                            <span class="btn-wrap">
-                                                                <span class="text-one">Learn More</span>
-                                                                <span class="text-two">Learn More</span>
+                                                    <div className="button-box d-flex flex-wrap">
+                                                        <a href="#" className="btn">
+                                                            <span className="btn-wrap">
+                                                                <span className="text-one">Learn More</span>
+                                                                <span className="text-two">Learn More</span>
                                                             </span>
                                                         </a>
                                                     </div>
 
                                                 </div>
                                             </div>
-                                            <div class="content-image-layer"><img src="../images/slider/9.png" alt="img" /></div>
+                                            <div className="content-image-layer"><img src="../images/slider/9.png" alt="img" /></div>
                                         </div>
 
                                     </div>
@@ -56,31 +56,31 @@ const BusinessSliders = () => {
 
                     {/* <!-- Slide Two --> */}
                     <SwiperSlide>
-                        <div class="slide">
-                            <div class="container">
-                                <div class="slide-inner">
-                                    <div class="image-layer" style={{ backgroundImage: `url(../images/slider/8.jpg)` }}></div>
-                                    <div class="row clearfix align-items-center">
+                        <div className="slide">
+                            <div className="container">
+                                <div className="slide-inner">
+                                    <div className="image-layer" style={{ backgroundImage: `url(../images/slider/8.jpg)` }}></div>
+                                    <div className="row clearfix align-items-center">
 
                                         {/* <!-- Content Column --> */}
-                                        <div class="content-column col-lg-6 col-md-7 col-sm-12">
-                                            <div class="inner-column">
-                                                <div class="title">Intelligent Decision Making</div>
+                                        <div className="content-column col-lg-6 col-md-7 col-sm-12">
+                                            <div className="inner-column">
+                                                <div className="title">Intelligent Decision Making</div>
                                                 <h1>We appreciate <br /> Unique <span>Business Ideas</span> from you</h1>
-                                                <div class="options-box">
+                                                <div className="options-box">
                                                     {/* <!-- Button Box --> */}
-                                                    <div class="button-box d-flex flex-wrap">
-                                                        <a href="#" class="btn">
-                                                            <span class="btn-wrap">
-                                                                <span class="text-one">Learn More</span>
-                                                                <span class="text-two">Learn More</span>
+                                                    <div className="button-box d-flex flex-wrap">
+                                                        <a href="#" className="btn">
+                                                            <span className="btn-wrap">
+                                                                <span className="text-one">Learn More</span>
+                                                                <span className="text-two">Learn More</span>
                                                             </span>
                                                         </a>
                                                     </div>
 
                                                 </div>
                                             </div>
-                                            <div class="content-image-layer"><img src="../images/slider/9-2.png" alt="img" /></div>
+                                            <div className="content-image-layer"><img src="../images/slider/9-2.png" alt="img" /></div>
                                         </div>
 
                                     </div>

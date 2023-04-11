@@ -80,13 +80,13 @@ const TestimonialContainer = () => {
         },
     ];
     return (
-        <section class="testimonial-section">
-            <div class="container">
-                <div class="row clearfix">
+        <section className="testimonial-section">
+            <div className="container">
+                <div className="row clearfix">
 
                     {/* <!-- Title Column --> */}
-                    <div class="title-column col-lg-4 col-md-12 col-sm-12 px-lg-0">
-                        <div class="inner-column">
+                    <div className="title-column col-lg-4 col-md-12 col-sm-12 px-lg-0">
+                        <div className="inner-column">
                             <SectionTitle02
                                 title="CLIENTS TESTIMONIAL"
                                 header="What our Clients"
@@ -96,9 +96,9 @@ const TestimonialContainer = () => {
                     </div>
 
                     {/* <!-- Carousel Column --> */}
-                    <div class="carousel-column col-lg-8 col-md-12 col-sm-12">
-                        <div class="inner-column">
-                            <div class="testimonial-carousel owl-carousel owl-theme">
+                    <div className="carousel-column col-lg-8 col-md-12 col-sm-12">
+                        <div className="inner-column">
+                            <div className="testimonial-carousel owl-carousel owl-theme">
                                 <Swiper
                                     className="owl-stage-outer"
                                     modules={[Controller, Autoplay, Pagination]}

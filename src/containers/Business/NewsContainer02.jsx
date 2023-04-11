@@ -166,12 +166,12 @@ const NewsContainer02 = () => {
 
                     </Swiper>
 
-                    {/* <div class="owl-nav">
-                        <div class="owl-prev">
-                            <span class="fa fa-angle-left"></span>
+                    {/* <div className="owl-nav">
+                        <div className="owl-prev">
+                            <span className="fa fa-angle-left"></span>
                         </div>
-                        <div class="owl-next">
-                            <span class="fa fa-angle-right"></span>
+                        <div className="owl-next">
+                            <span className="fa fa-angle-right"></span>
                         </div>
                     </div> */}
 

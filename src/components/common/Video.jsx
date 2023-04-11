@@ -11,11 +11,11 @@ const Video = (props) => {
 
     }, []);
     return (
-        <div class="video-post">
-            <div class="ytube-video">
+        <div className="video-post">
+            <div className="ytube-video">
                 <iframe id="ytvideo" src={props.link} allow="autoplay;" allowfullscreen=""></iframe>
-                <div class="post-content">
-                    <div class="ytplay-btn"><i class="fa fa-play"></i></div>
+                <div className="post-content">
+                    <div className="ytplay-btn"><i className="fa fa-play"></i></div>
                     <img src={props.img} alt="img" />
                 </div>
             </div>

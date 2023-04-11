@@ -42,10 +42,10 @@ const TeamPageContainer = () => {
     ];
 
     return (
-        <section class="team-section">
-            <div class="container">
-                <div class="inner-column">
-                    <div class="row clearfix">
+        <section className="team-section">
+            <div className="container">
+                <div className="inner-column">
+                    <div className="row clearfix">
                         {
                             TeamPageData.map(data => <TeamBlock
                                 key={data.id}

@@ -1,6 +1,17 @@
-import React from 'react';
+import $ from 'jquery';
+import React, { useEffect } from 'react';
 
 const WhyChooseUs = () => {
+    useEffect(() => {
+        var $ytvideoTrigger = $(".ytplay-btn");
+        $ytvideoTrigger.on("click", function (evt) {
+            $(".ytube-video").addClass("play");
+            $("#ytvideo")[0].src += "?autoplay=1";
+        });
+
+
+    }, []);
+
     return (
         <section className="why-choose-section py-0">
             <div className="container">
@@ -42,7 +53,7 @@ const WhyChooseUs = () => {
                                         </span>
                                     </a>
                                     {/* <!-- Play Box --> */}
-                                    <a href="https://www.youtube.com/watch?v=kxPCFljwJws" className="lightbox-video play-box">
+                                    <a target="_blank" href="https://www.youtube.com/watch?v=kxPCFljwJws" className="lightbox-video play-box">
                                         <span><i className="bi bi-play-fill"></i></span> Watch Video
                                     </a>
                                 </div>
