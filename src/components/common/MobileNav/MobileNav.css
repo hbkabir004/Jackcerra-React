@@ -1,17 +1,3 @@
-/* .mr_menu_02_toggle {
-    background: transparent;
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    padding: 0rem;
-    color: #999999;
-    font-size: 1.5rem;
-    transition: all 0.5s ease-in-out;
-    flex-shrink: 0;
-    margin-left: 1.25rem;
-    border: 0;
-  } */
-  
   .mr_menu_02_toggle:focus {
     outline: none;
   }
@@ -19,15 +5,16 @@
   .mr_menu_02_toggle:hover {
     color: red;;
   }
+
+.offcanvas.offcanvas-start{
+  width: 300px;
+}
   
   .mr_menu_02 {
-    width: 300px;
+    width: 100%;
     background: #1c2539;
     padding: 0px;
     height: 100%;
-    position: fixed;
-    /* left: -300px; */
-    top: 0;
     z-index: 99999;
     transition: all 0.5s ease-in-out;
     overflow: auto;
@@ -56,7 +43,6 @@
     line-height: 20px;
     border: 0px solid white;
     border-radius: 5px;
-    transition: all 0.5s ease;
   }
   
   .mr_menu_02 .mr_menu_02_close:focus {
@@ -121,7 +107,7 @@
   }
   
   .mr_menu_02 ul.navigation li.current > a, .mr_menu_02 ul.navigation li.active > a, .mr_menu_02 ul.navigation li:hover > a {
-    color: #FFA903;;
+    color: red;;
   }
   
   .mr_menu_02 ul.navigation li .submenu_opener {
