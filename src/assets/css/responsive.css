@@ -328,6 +328,10 @@
 }
 
 @media only screen and (max-width: 767px){
+
+	.main-slider{
+		margin-top: 0px;
+	}
 	
 	.mCSB_inside > .mCSB_container{
 		margin-right:0px;
@@ -414,6 +418,9 @@
 }
 
 @media only screen and (max-width: 599px){
+	.main-slider{
+		margin-top: 0px;
+	}
 	.sec-title .title,
 	.main-slider .title{
 		letter-spacing:0px;
@@ -460,6 +467,10 @@
 	.third-slider .content-column::before,
 	.third-slider .content-column::after{
 		display: none;
+	}
+
+	.main-slider{
+		margin-top: 0px;
 	}
 }
 
@@ -541,6 +552,10 @@
 		margin-left: var(--space-0);
 		margin-top: var(--space-20);
 	}
+
+	.main-slider{
+		margin-top: 0px;
+	}
 }
 
 @media only screen and (max-width: 360px) {
@@ -548,5 +563,9 @@
 	.main-header .header-top .right-box {
 		justify-content: center;
 		width: 100%;
+	}
+
+	.main-slider{
+		margin-top: 0px;
 	}
 }

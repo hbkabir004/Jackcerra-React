@@ -159,11 +159,7 @@ const ConsultancyHeader = () => {
                                     <a onClick={handleAddCss} href="#" className="aside_open d-none d-sm-block"><img src="images/icons/menu.png" alt="img" /></a>
 
                                     {/* <!-- Responsive Menu --> */}
-                                    {/* <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button">
-                                        <i className="bi bi-list"></i>
-                                    </button> */}
-
-                                    <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
+                                    <button className="mobileMenu-toggle d-lg-none d-block ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
                                     >
                                         <i className="bi bi-list"></i>
                                     </button>

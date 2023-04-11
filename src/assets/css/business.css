@@ -91,6 +91,11 @@
 
 
 /* Business Process */
+
+.business .business-process{
+  overflow: hidden;
+}
+
 .business .business-process .image-column {
   position: relative;
 }

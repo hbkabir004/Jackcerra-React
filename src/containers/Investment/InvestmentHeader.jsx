@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import AsideInfoBar from '../../components/common/AsideInfoBar';
+import MobileNav from '../../components/common/MobileNav/MobileNav';
+
 
 const InvestmentHeader = () => {
     const InvestmentAsideData =
@@ -122,9 +124,10 @@ const InvestmentHeader = () => {
                                     <a onClick={handleAddCss} className="aside_open"><span className="bi bi-list"></span></a>
 
                                     {/* <!-- Responsive Menu --> */}
-                                    {/* <button className="ma5menu__toggle d-lg-none d-block ms-3" type="button">
-                                    <i className="bi bi-list"></i>
-                                </button> */}
+                                    <button className="mobileMenu-toggle d-lg-none d-block ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHome" aria-controls="offcanvasHome"
+                                    >
+                                        <i className="bi bi-list"></i>
+                                    </button>
                                 </div>
                                 {/* <!-- End Outer Box --> */}
 
@@ -139,6 +142,8 @@ const InvestmentHeader = () => {
             </header>
 
             <AsideInfoBar handleAddCss={handleAddCss} isAdd={isAdd} data={InvestmentAsideData} />
+            <MobileNav />
+
 
         </>
     );

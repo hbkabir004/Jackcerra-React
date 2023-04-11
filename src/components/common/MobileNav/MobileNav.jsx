@@ -10,12 +10,12 @@ const Header02Nav = () => {
             function checkMedia(mql) {
                 if (mql.matches) {
                     counter++;
-                    $(".mr_menu_02 .mr_navmenu").append($(".main-menu"));
+                    $(".mr_menu_02 .mr_navmenu").append($("ul.navigation"));
                     if (counter === 1) {
                         menuClickAction();
                     }
                 } else {
-                    $(".header .mainnav").append($(".main-menu"));
+                    $(".header .mainnav").append($("ul.navigation"));
                     if (counter === 1) {
                         menuClickAction();
                     }
@@ -29,8 +29,8 @@ const Header02Nav = () => {
 
         function menuClickAction() {
             // Sub-Menu Open On-Click
-            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span class='submenu_opener d-xl-none'><i class='bi-arrow-right'></i></span>"));
-            $('.mr_menu_02 .main-menu li.dropdown .submenu_opener').on("click", function (e) {
+            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span class='submenu_opener d-xl-none'><i class='bi bi-chevron-right'></i></span>"));
+            $('.mr_menu_02 ul.navigation.clearfix li.dropdown .submenu_opener').on("click", function (e) {
                 $(this).parent().toggleClass('nav_open');
                 $(this).siblings('ul').slideToggle();
                 e.stopPropagation();
@@ -47,7 +47,7 @@ const Header02Nav = () => {
                 <button type="button" class="mr_menu_02_close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-square-fill"></i></button>
 
                 <div className="logo">
-                    <a href="/"><img src="images/logo-responsive.svg" alt="logo" /></a>
+                    <a href="/"><img src="../images/logo-responsive.svg" alt="logo" /></a>
                 </div>
 
                 <div class="mr_navmenu">
