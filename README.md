@@ -6,7 +6,7 @@
 
 ### Project Documentation
 
-To run the <b>Jackcerra-Documentation</b>, open the <b>index.html</b> file on your browser and follow it.
+To run the ```Jackcerra-Documentation``` open the ```index.html``` file on your browser and follow it.
 
 ## Tech Stack
 
