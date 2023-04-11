@@ -2,7 +2,7 @@ import $ from 'jquery';
 import React, { useEffect } from 'react';
 import './MobileNav.css';
 
-const Header02Nav = () => {
+const MobileNav = () => {
     useEffect(() => {
         var counter = 0;
         tablet();
@@ -15,13 +15,13 @@ const Header02Nav = () => {
                         menuClickAction();
                     }
                 } else {
-                    $(".header .mainnav").append($("ul.navigation"));
+                    $(".main-header .main-menu .navbar-collapse").append($("ul.navigation"));
                     if (counter === 1) {
                         menuClickAction();
                     }
                 }
             }
-            const mql = window.matchMedia('screen and (max-width: 1199.90px)');
+            const mql = window.matchMedia('screen and (max-width: 991.90px)');
 
             checkMedia(mql);
             mql.addEventListener('change', checkMedia);
@@ -29,7 +29,7 @@ const Header02Nav = () => {
 
         function menuClickAction() {
             // Sub-Menu Open On-Click
-            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span class='submenu_opener d-xl-none'><i class='bi bi-chevron-right'></i></span>"));
+            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span class='submenu_opener d-lg-none'><i class='bi bi-chevron-right'></i></span>"));
             $('.mr_menu_02 ul.navigation.clearfix li.dropdown .submenu_opener').on("click", function (e) {
                 $(this).parent().toggleClass('nav_open');
                 $(this).siblings('ul').slideToggle();
@@ -58,4 +58,4 @@ const Header02Nav = () => {
     );
 };
 
-export default Header02Nav;
+export default MobileNav;
