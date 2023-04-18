@@ -98,7 +98,7 @@ const BusinessHeader = () => {
 
                                     {/* <!-- Button Box --> */}
                                     <div className="button-box d-none d-sm-block">
-                                        <a href="contact.html" className="btn clearfix">
+                                        <a href="/contact" className="btn clearfix">
                                             <span className="btn-wrap">
                                                 <span className="text-one">Get Free Quote</span>
                                                 <span className="text-two">Get Free Quote</span>

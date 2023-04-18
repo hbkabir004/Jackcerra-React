@@ -4,7 +4,7 @@ import ServiceDetailsContainer from '../../containers/ServiceContainers/ServiceD
 
 const ServiceDetails = () => {
     return (
-        <div className='mt-5'>
+        <div className='page-wrapper mt-3'>
             <PageHeader title='Growth Consultation' active='SINGLE SERVICE' route02='OUR SERVICES' />
             <ServiceDetailsContainer />
         </div>

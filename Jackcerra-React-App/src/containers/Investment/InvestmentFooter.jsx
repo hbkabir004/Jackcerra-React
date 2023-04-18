@@ -28,7 +28,7 @@ const InvestmentFooter = () => {
                                 {/* <!-- Footer Column --> */}
                                 <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                                     <div className="logo-column">
-                                        <div className="logo"><a href="index.html"><img src="../images/logo-footer-invest.svg" alt="img" title="" /></a></div>
+                                        <div className="logo"><a href="/"><img src="../images/logo-footer-invest.svg" alt="img" title="" /></a></div>
                                         <p>Jackcerra is a full-service Investment firm with help companies to utilize their investment & to grow</p>
                                         <ul className="contact-list">
                                             <li><span className="icon"><img src="../images/icons/envelope.png" alt="img" /></span> <a href="mailto:jackcerra@email.com">Jackcerra.inc@gmail.com</a></li>

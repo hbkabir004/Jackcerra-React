@@ -4,8 +4,8 @@ import ContactContainer from '../containers/ContactContainer';
 
 const ContactPage = () => {
     return (
-        <div className='mt-5'>
-            <PageHeader title='Our Services' active='SERVICES' routeClass='d-none' />
+        <div className='page-wrapper mt-3'>
+            <PageHeader title='Contact Us' active='CONTACT' routeClass='d-none' />
             <ContactContainer />
         </div>
     );

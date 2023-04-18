@@ -4,7 +4,7 @@ import ServiceContainer01 from '../../containers/ServiceContainers/ServiceContai
 
 const Service01 = () => {
     return (
-        <div className='mt-5'>
+        <div className='page-wrapper mt-3'>
             <PageHeader title='Our Services' active='SERVICES' routeClass='d-none' />
             <ServiceContainer01 />
         </div>

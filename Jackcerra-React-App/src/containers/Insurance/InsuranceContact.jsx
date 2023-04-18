@@ -13,7 +13,7 @@ const InsuranceContact = () => {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6">
-                            <form method="post" action="contact.html">
+                            <form method="post" action="/contact">
                                 <div className="sec-title text-center">
                                     <div className="title">Make Appointment</div>
                                     <h3>How can we help you?</h3>

@@ -11,7 +11,7 @@ const CTA = () => {
                         <p>We create relationship of trust with our customer by helping <br /> your company grow by investing . </p>
 
                         <div className="button-box">
-                            <a href="contact.html" className="btn btn-gradient clearfix">
+                            <a href="/contact" className="btn btn-gradient clearfix">
                                 <span className="btn-wrap">
                                     <span className="text-one">Connect With Us</span>
                                     <span className="text-two">Connect With Us</span>

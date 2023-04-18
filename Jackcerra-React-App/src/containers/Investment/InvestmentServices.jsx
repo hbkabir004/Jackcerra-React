@@ -46,7 +46,7 @@ const InvestmentServices = () => {
                                     services to our customers & create best ideas to
                                     help grow our clients. </div>
                                 <div className="button-box">
-                                    <a href="service.html" className="btn">
+                                    <a href="service/service" className="btn">
                                         <span className="btn-wrap">
                                             <span className="text-one">See All Services</span>
                                             <span className="text-two">See All Services</span>

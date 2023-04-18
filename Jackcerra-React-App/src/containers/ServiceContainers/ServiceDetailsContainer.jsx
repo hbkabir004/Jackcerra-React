@@ -12,42 +12,42 @@ const ServiceDetailsContainer = () => {
                             <div className="sidenav">
                                 <ul className="side_menu">
                                     <li className="menu-item active">
-                                        <a href="service-details.html">
+                                        <a href="/service-details">
                                             <img src="images/services/nav/1-1.png" alt="icon" />
                                             <img src="images/services/nav/1-2.png" alt="icon" />
                                             Growth Consultation
                                         </a>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="service-details.html">
+                                        <a href="/service-details">
                                             <img src="images/services/nav/2-1.png" alt="icon" />
                                             <img src="images/services/nav/2-2.png" alt="icon" />
                                             Financial Adivice
                                         </a>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="service-details.html">
+                                        <a href="/service-details">
                                             <img src="images/services/nav/3-1.png" alt="icon" />
                                             <img src="images/services/nav/3-2.png" alt="icon" />
                                             Marketing Strategy
                                         </a>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="service-details.html">
+                                        <a href="/service-details">
                                             <img src="images/services/nav/4-1.png" alt="icon" />
                                             <img src="images/services/nav/4-2.png" alt="icon" />
                                             Public Relation
                                         </a>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="service-details.html">
+                                        <a href="/service-details">
                                             <img src="images/services/nav/5-1.png" alt="icon" />
                                             <img src="images/services/nav/5-2.png" alt="icon" />
                                             HR Management
                                         </a>
                                     </li>
                                     <li className="menu-item">
-                                        <a href="service-details.html">
+                                        <a href="/service-details">
                                             <img src="images/services/nav/6-1.png" alt="icon" />
                                             <img src="images/services/nav/6-2.png" alt="icon" />
                                             New Idea Creation

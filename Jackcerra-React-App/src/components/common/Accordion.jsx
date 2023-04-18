@@ -92,7 +92,7 @@ const Accordion = () => {
 
                             <div className="more-query">
                                 <p>Still Have More Questions?</p>
-                                <h6>Contact Our <a href="contact.html">Expert Support Team</a></h6>
+                                <h6>Contact Our <a href="/contact">Expert Support Team</a></h6>
                             </div>
                         </div>
 

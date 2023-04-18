@@ -8,7 +8,7 @@ const InsuranceServiceBlock = ({ data }) => {
             <div className="service-block">
                 <div className="inner-box">
                     <div className="icon"><img src={img} alt="" /></div>
-                    <h5><a href="service-details.html">{title}</a></h5>
+                    <h5><a href="/service-details">{title}</a></h5>
                     <p>{description}</p>
                 </div>
             </div>

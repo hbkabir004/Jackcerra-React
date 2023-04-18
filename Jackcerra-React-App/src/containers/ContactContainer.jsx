@@ -62,7 +62,7 @@ const ContactContainer = () => {
                 <div className="contact-form default-form">
                     <div className="row">
                         <div className="col-lg-8 col-md-10 offset-lg-2 offset-md-1">
-                            <form method="post" action="contact.html">
+                            <form method="post" action="/contact">
                                 <div className="sec-title centered">
                                     <h1>Drop Us A Line</h1>
                                     <p>Jackcerra Inc will arrange your first business consultation totally free of cost</p>

@@ -36,14 +36,14 @@ const HomeSliders04 = () => {
                                             <div className="options-box">
                                                 {/* <!-- Button Box --> */}
                                                 <div className="button-box d-flex flex-wrap">
-                                                    <a href="service-details.html" className="btn">
+                                                    <a href="/service-details" className="btn">
                                                         <span className="btn-wrap">
                                                             <span className="text-one">Learn More</span>
                                                             <span className="text-two">Learn More</span>
                                                         </span>
                                                     </a>
 
-                                                    <a href="service.html" className="btn btn-two">
+                                                    <a href="/service" className="btn btn-two">
                                                         <span className="btn-wrap">
                                                             <span className="text-one">Get Service</span>
                                                             <span className="text-two">Get Service</span>
@@ -81,14 +81,14 @@ const HomeSliders04 = () => {
                                             <div className="options-box">
                                                 {/* <!-- Button Box --> */}
                                                 <div className="button-box d-flex flex-wrap">
-                                                    <a href="service-details.html" className="btn">
+                                                    <a href="/service-details" className="btn">
                                                         <span className="btn-wrap">
                                                             <span className="text-one">Learn More</span>
                                                             <span className="text-two">Learn More</span>
                                                         </span>
                                                     </a>
 
-                                                    <a href="service.html" className="btn btn-two">
+                                                    <a href="/service" className="btn btn-two">
                                                         <span className="btn-wrap">
                                                             <span className="text-one">Get Service</span>
                                                             <span className="text-two">Get Service</span>

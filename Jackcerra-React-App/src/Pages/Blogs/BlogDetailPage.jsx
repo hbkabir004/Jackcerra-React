@@ -4,7 +4,7 @@ import BlogDetailContainer from '../../containers/BlogContainers/BlogDetailConta
 
 const BlogDetailPage = () => {
     return (
-        <div className='mt-5'>
+        <div className='page-wrapper mt-3'>
             <PageHeader title='Blog' active='BLOG DETAILS' route02='BLOG' />
             <BlogDetailContainer />
         </div>

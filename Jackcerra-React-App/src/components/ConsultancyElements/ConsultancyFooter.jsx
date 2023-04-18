@@ -10,7 +10,7 @@ const ConsultancyFooter = () => {
                     <div className="row clearfix align-items-center">
                         {/* <!-- Logo Column --> */}
                         <div className="logo-column col-lg-3 col-md-12 col-sm-12">
-                            <div className="logo"><a href="index.html"><img src="images/logo-footer.svg" alt="img" title="" /></a></div>
+                            <div className="logo"><a href="/"><img src="images/logo-footer.svg" alt="img" title="" /></a></div>
                         </div>
                         {/* <!-- Info Column --> */}
                         <div className="info-column col-lg-9 col-md-12 col-sm-12">
@@ -48,7 +48,7 @@ const ConsultancyFooter = () => {
                                         <div className="text">Jackcerra is a Business firm with record of winning many projects
                                             under tough circumstances.</div>
                                         <div className="newsletter-form">
-                                            <form method="post" action="contact.html">
+                                            <form method="post" action="/contact">
                                                 <div className="form-group">
                                                     <input type="email" name="email" value="" placeholder="Email Address" required="" />
                                                     <button type="submit" className="btn-submit fa fa-send"></button>
@@ -63,11 +63,11 @@ const ConsultancyFooter = () => {
                                     <div className="footer-widget links-widget">
                                         <h4>Useful Links</h4>
                                         <ul className="links">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="team.html">Team Member</a></li>
-                                            <li><a href="service.html">Services</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="contact.html">Hire us</a></li>
+                                            <li><a href="/about">About Us</a></li>
+                                            <li><a href="/team">Team Member</a></li>
+                                            <li><a href="/service">Services</a></li>
+                                            <li><a href="/contact">Contact Us</a></li>
+                                            <li><a href="/contact">Hire us</a></li>
                                         </ul>
                                     </div>
                                 </div>

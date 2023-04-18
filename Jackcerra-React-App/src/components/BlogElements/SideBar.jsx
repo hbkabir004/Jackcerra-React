@@ -43,7 +43,7 @@ const SideBar = () => {
                                     <img src="images/blog/1.jpg" alt="img" />
                                 </div>
                                 <div className="latest-posts-content">
-                                    <h5><a href="blog.html">How consultation in business is affecting new ventures</a></h5>
+                                    <h5><a href="/blog">How consultation in business is affecting new ventures</a></h5>
                                     <h6>January 11, 2023</h6>
                                 </div>
                             </li>
@@ -52,7 +52,7 @@ const SideBar = () => {
                                     <img src="images/blog/2.jpg" alt="img" />
                                 </div>
                                 <div className="latest-posts-content">
-                                    <h5><a href="blog.html">Challenges of consultation new Business Firms</a></h5>
+                                    <h5><a href="/blog">Challenges of consultation new Business Firms</a></h5>
                                     <h6>January 01, 2023</h6>
                                 </div>
                             </li>
@@ -61,7 +61,7 @@ const SideBar = () => {
                                     <img src="images/blog/3.jpg" alt="img" />
                                 </div>
                                 <div className="latest-posts-content">
-                                    <h5><a href="blog.html">Changes in recent consultancy styles now a days</a></h5>
+                                    <h5><a href="/blog">Changes in recent consultancy styles now a days</a></h5>
                                     <h6>January 21, 2023</h6>
                                 </div>
                             </li>

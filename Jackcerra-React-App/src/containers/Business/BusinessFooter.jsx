@@ -15,10 +15,10 @@ const BusinessFooter = () => {
                                 {/* <!-- Footer Column --> */}
                                 <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                                     <div className="footer-widget about-widget">
-                                        <div className="logo mb-4"><a href="index.html"><img src="images/logo-footer-business.svg" alt="img" title="" /></a></div>
+                                        <div className="logo mb-4"><a href="/"><img src="images/logo-footer-business.svg" alt="img" title="" /></a></div>
                                         <div className="text">Jackcerra is a full-service business firm with record of winning many campaigns under challenging circumstances.</div>
                                         <div className="newsletter-form">
-                                            <form method="post" action="contact.html">
+                                            <form method="post" action="/contact">
                                                 <div className="form-group">
                                                     <input type="email" name="email" value="" placeholder="Email Address" required="" />
                                                     <button type="submit" className="btn-submit fa fa-send"></button>
@@ -33,11 +33,11 @@ const BusinessFooter = () => {
                                     <div className="footer-widget links-widget">
                                         <h4>Useful Links</h4>
                                         <ul className="links">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="team.html">Team Member</a></li>
-                                            <li><a href="service.html">Services</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="contact.html">Hire us</a></li>
+                                            <li><a href="/about">About Us</a></li>
+                                            <li><a href="/team">Team Member</a></li>
+                                            <li><a href="/service">Services</a></li>
+                                            <li><a href="/contact">Contact Us</a></li>
+                                            <li><a href="/contact">Hire us</a></li>
                                         </ul>
                                     </div>
                                 </div>

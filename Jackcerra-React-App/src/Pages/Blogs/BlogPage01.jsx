@@ -4,7 +4,7 @@ import BlogStandardContainer from '../../containers/BlogContainers/BlogStandardC
 
 const BlogPage01 = () => {
     return (
-        <div className='mt-5'>
+        <div className='page-wrapper mt-3'>
             <PageHeader title='Blog' active='BLOG STANDARD' route02='BLOG' />
             <BlogStandardContainer />
         </div>

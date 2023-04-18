@@ -46,7 +46,7 @@ const ConsultancyHeader = () => {
     };
 
     // Search width increase
-    const [isActive, setActive] = useState('false');
+    const [isActive, setActive] = useState('true');
     const handleToggle = () => {
         setActive(!isActive);
     };

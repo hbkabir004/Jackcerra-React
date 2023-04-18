@@ -7,7 +7,7 @@ const ContactForm02 = () => {
                 <div className="contact-form default-form mt-0">
                     <div className="row">
                         <div className="col-lg-7 col-md-8 offset-lg-5 offset-md-4">
-                            <form method="post" action="contact.html">
+                            <form method="post" action="/contact">
                                 <div className="sec-title">
                                     <div className="title">Make Appointment</div>
                                     <h1>Get Free Consultation</h1>

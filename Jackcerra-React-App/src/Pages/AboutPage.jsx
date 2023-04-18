@@ -4,7 +4,7 @@ import AboutPageContainer from '../containers/AboutPageContainer';
 
 const AboutPage = () => {
     return (
-        <div className='mt-5'>
+        <div className='page-wrapper mt-3'>
             <PageHeader title='About Us' active='ABOUT' routeClass='d-none' />
             <AboutPageContainer />
         </div>

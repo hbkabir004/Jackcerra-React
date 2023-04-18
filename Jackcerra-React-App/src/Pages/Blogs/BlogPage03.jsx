@@ -4,7 +4,7 @@ import BlogGridWithSidebarContainer from '../../containers/BlogContainers/BlogGr
 
 const BlogPage03 = () => {
     return (
-        <div className='mt-5'>
+        <div className='page-wrapper mt-3'>
             <PageHeader title='Blog' active='BLOG GRID WITH SIDEBAR' route02='BLOG' />
             <BlogGridWithSidebarContainer />
         </div>
