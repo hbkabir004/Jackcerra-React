@@ -125,6 +125,7 @@ const ConsultancyFooter = () => {
                                 <li><a href="https://www.twitter.com/" className="fa fa-twitter"></a></li>
                                 <li><a href="https://www.linkedin.com/" className="fa fa-linkedin"></a></li>
                             </ul>
+
                             <div className="language dropdown">
                                 <button className="btn dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false"><span>English (US)</span> <span className="fa fa-angle-down"></span></button>
                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenu">

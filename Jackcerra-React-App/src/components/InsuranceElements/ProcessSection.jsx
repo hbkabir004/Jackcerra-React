@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
+import Fancybox from '../../assets/js/fancybox';
 
 const ProcessSection = () => {
     useEffect(() => {
@@ -46,9 +47,11 @@ const ProcessSection = () => {
                                         </span>
                                     </a>
                                     {/* <!-- Play Box --> */}
-                                    <a target="_blank" href="https:/www.youtube.com/watch?v=kxPCFljwJws" className="lightbox-video play-box">
-                                        <span><i className="bi bi-play-fill"></i></span> Watch Video
-                                    </a>
+                                    <Fancybox options={{ dragToClose: false }}>
+                                        <a href="https://www.youtube.com/watch?v=kxPCFljwJws" data-fancybox="video" className="lightbox-video play-box">
+                                            <span><i className="fa fa-play"></i></span> Watch Video
+                                        </a>
+                                    </Fancybox>
                                 </div>
                             </div>
                         </div>

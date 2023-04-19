@@ -1225,6 +1225,11 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.37.0.tgz"
   integrity sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==
 
+"@fancyapps/ui@4.0.0-beta.3":
+  version "4.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.0-beta.3.tgz#d664a03b4fa888fccf8c601eb3b6a73f047105ac"
+  integrity sha512-B+DBLOQwpqm5kN72kU7U0qqYayKO50I7otEnQW+MFQi3XyOpHh14Fyypi2nLqpBj4msAtKyssSzaDlaCThEQJA==
+
 "@firebase/analytics-compat@0.2.5":
   version "0.2.5"
   resolved "https://registry.npmjs.org/@firebase/analytics-compat/-/analytics-compat-0.2.5.tgz"

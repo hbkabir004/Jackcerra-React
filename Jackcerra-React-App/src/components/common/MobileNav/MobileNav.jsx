@@ -29,7 +29,7 @@ const MobileNav = () => {
 
         function menuClickAction() {
             // Sub-Menu Open On-Click
-            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span class='submenu_opener d-lg-none'><i class='bi bi-chevron-right'></i></span>"));
+            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span className='submenu_opener d-lg-none'><i className='bi bi-chevron-right'></i></span>"));
             $('.mr_menu_02 ul.navigation.clearfix li.dropdown .submenu_opener').on("click", function (e) {
                 $(this).parent().toggleClass('nav_open');
                 $(this).siblings('ul').slideToggle();
@@ -42,15 +42,15 @@ const MobileNav = () => {
 
     return (
         <div className="offcanvas offcanvas-start" tabIndex="-1" id='offcanvasHome' aria-labelledby="offcanvasNavbarLabel">
-            <div class="mr_menu_02">
-                <div class="mr_menu_02_overlay"></div>
-                <button type="button" class="mr_menu_02_close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-square-fill"></i></button>
+            <div className="mr_menu_02">
+                <div className="mr_menu_02_overlay"></div>
+                <button type="button" className="mr_menu_02_close" data-bs-dismiss="offcanvas" aria-label="Close"><i className="bi bi-x-square-fill"></i></button>
 
                 <div className="logo">
                     <a href="/"><img src="../images/logo-responsive.svg" alt="logo" /></a>
                 </div>
 
-                <div class="mr_navmenu">
+                <div className="mr_navmenu">
 
                 </div>
             </div>

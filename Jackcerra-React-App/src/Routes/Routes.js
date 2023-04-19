@@ -38,10 +38,10 @@ export const routes = createBrowserRouter([
                     path: '/',
                     element: <ConsultancyHome />
                 },
-                {
-                    path: '/consultancy',
-                    element: <ConsultancyHome />
-                },
+                // {
+                //     path: '/consultancy',
+                //     element: <ConsultancyHome />
+                // },
                 {
                     path: '/service',
                     element: <Services01 />

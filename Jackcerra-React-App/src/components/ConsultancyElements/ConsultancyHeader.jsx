@@ -19,26 +19,6 @@ const ConsultancyHeader = () => {
         }
     }
 
-
-    // Hide header on scroll down
-    // let lastScroll = 800;
-    // window.onscroll = () => {
-    //     const currentScroll = window.pageYOffset;
-    //     if (currentScroll <= 800) {
-    //         document.querySelector('header').classList.remove('top-up');
-    //         return;
-    //     }
-
-    //     if (currentScroll > lastScroll) {
-
-    //         document.querySelector('header').classList.add('top-up');
-    //     }
-    //     else if (currentScroll < lastScroll) {
-    //         document.querySelector('header').classList.remove('top-up');
-    //     }
-    //     lastScroll = currentScroll;
-    // }
-
     // Aside info bar
     const [isAdd, setAdd] = useState("false");
     const handleAddCss = () => {
@@ -63,10 +43,10 @@ const ConsultancyHeader = () => {
                             <div className="left-box d-flex align-items-center">
                                 {/* <!-- Social Box --> */}
                                 <ul className="social-box">
-                                    <li><a href="https:/www.facebook.com/" className="fa fa-facebook-f"></a></li>
-                                    <li><a href="https:/www.instagram.com/" className="fa fa-instagram"></a></li>
-                                    <li><a href="https:/www.twitter.com/" className="fa fa-twitter"></a></li>
-                                    <li><a href="https:/www.linkedin.com/" className="fa fa-linkedin"></a></li>
+                                    <li><a href="https://www.facebook.com/" className="fa fa-facebook-f"></a></li>
+                                    <li><a href="https://www.instagram.com/" className="fa fa-instagram"></a></li>
+                                    <li><a href="https://www.twitter.com/" className="fa fa-twitter"></a></li>
+                                    <li><a href="https://www.linkedin.com/" className="fa fa-linkedin"></a></li>
                                 </ul>
                             </div>
 
@@ -107,9 +87,9 @@ const ConsultancyHeader = () => {
                                 <nav className="main-menu d-none d-lg-block">
                                     <div className="navbar-collapse collapse clearfix" >
                                         <ul className="navigation clearfix">
-                                            <li className="dropdown"><a href="/consultancy">Home</a>
+                                            <li className="dropdown"><a href="/">Home</a>
                                                 <ul>
-                                                    <li><a href="/consultancy">Home</a></li>
+                                                    <li><a href="/">Home</a></li>
                                                     <li><a href="../business/">Business</a></li>
                                                     <li><a href="../insurance/">Insurance</a></li>
                                                     <li><a href="../investment/">Investment</a></li>

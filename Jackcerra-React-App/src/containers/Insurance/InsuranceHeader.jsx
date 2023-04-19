@@ -68,7 +68,7 @@ const InsuranceHeader = () => {
                                                 <ul>
                                                     <li><a href="/insurance">Home</a></li>
                                                     <li><a href="../business">Business</a></li>
-                                                    <li><a href="../consultancy">Consultancy</a></li>
+                                                    <li><a href="../">Consultancy</a></li>
                                                     <li><a href="../investment">Investment</a></li>
                                                 </ul>
                                             </li>

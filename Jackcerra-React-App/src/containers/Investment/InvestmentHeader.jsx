@@ -75,7 +75,7 @@ const InvestmentHeader = () => {
                                                 <ul>
                                                     <li><a href="/investment">Home</a></li>
                                                     <li><a href="../business">Business</a></li>
-                                                    <li><a href="../consultancy">Consultancy</a></li>
+                                                    <li><a href="../">Consultancy</a></li>
                                                     <li><a href="../insurance">Insurance</a></li>
                                                 </ul>
                                             </li>

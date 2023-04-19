@@ -59,7 +59,7 @@ const BusinessHeader = () => {
                                             <li className="dropdown"><a href="/business">Home</a>
                                                 <ul>
                                                     <li><a href="/business">Home</a></li>
-                                                    <li><a href="../consultancy">Consultancy</a></li>
+                                                    <li><a href="../">Consultancy</a></li>
                                                     <li><a href="../insurance">Insurance</a></li>
                                                     <li><a href="../investment">Investment</a></li>
                                                 </ul>
