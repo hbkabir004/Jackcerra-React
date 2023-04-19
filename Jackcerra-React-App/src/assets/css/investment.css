@@ -92,7 +92,7 @@
     color: #18304B;
 }
 .investment .service-block-style-two .inner-box:after {
-    content: url(../images/services/shape-6.png);
+    content: url(../../../public/images/services/shape-6.png);
 }
 
 /* Read More Button */
@@ -362,7 +362,7 @@
     overflow: hidden;
 }
 .why-choose-section .image-column::before {
-    content: url('../images/resource/circle-layer-3.png');
+    content: url('../../../public/images/resource/circle-layer-3.png');
     position: absolute;
     left: 70px;
     top: 20px;
@@ -372,13 +372,13 @@
     transform-style: preserve-3d;
 }
 .why-choose-section .image-column .image::before {
-    content: url('../images/resource/team.png');
+    content: url('../../../public/images/resource/team.png');
     position: absolute;
     left: -15px;
     top: -40px;
 }
 .why-choose-section .image-column .image::after {
-    content: url('../images/resource/chart.png');
+    content: url('../../../public/images/resource/chart.png');
     position: absolute;
     right: -60px;
     bottom: 70px;     
@@ -498,7 +498,7 @@
     margin-top: -230px;
 }
 .business-section-four::before {
-    content: url('../images/resource/shape-tropo.png');
+    content: url('../../../public/images/resource/shape-tropo.png');
     position: absolute;
     right: 49%;
     top: 10px;
@@ -509,7 +509,7 @@
     position: relative;
 }
 .business-section-four .content-column::after {
-    content: url('../images/resource/circle.png');
+    content: url('../../../public/images/resource/circle.png');
     position: absolute;
     left: 90%;
     top: 50%;
@@ -536,7 +536,7 @@
     box-shadow: 0px 0px 15px rgba(245, 249, 255, 0.6);
 }
 .investment .counter-box.style-two .counter-column::before {
-    content: url('../images/resource/shape-round.png');
+    content: url('../../../public/images/resource/shape-round.png');
     position: absolute;
     top: -1px;
     right: -4px;
@@ -592,7 +592,7 @@
     border-radius: 15px;
 }
 .company-growth .inner-container::after {
-    content: url('../images/resource/layer-1.png');
+    content: url('../../../public/images/resource/layer-1.png');
     position: absolute;
     right: 0;
     bottom: -10px;
@@ -915,7 +915,7 @@
 
 /* Page Header */
 .investment .page_header {
-    background-image: url(../images/background/37.jpg);
+    background-image: url(../../../public/images/background/37.jpg);
 }
 .investment .page_header::before {
     display: none;

@@ -4,7 +4,7 @@
     padding-bottom: var(--space-90);
 }
 .team-section.home::before{
-	content: url(../images/resource/circle-half-right.png);
+	content: url(../../../public/images/resource/circle-half-right.png);
     position: absolute;
     right: calc(100% - 210px);
     bottom: 0;

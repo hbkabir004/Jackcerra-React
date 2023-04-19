@@ -1,7 +1,7 @@
 /*---------- Breadcrumb Section ------------*/
 .page_header {
     position: relative;
-    background-image: url("../images/background/5.jpg");
+    background-image: url("../../../public/images/background/5.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 .page_header::before {
     position: absolute;
-    content: url("../images/background/shape-1.png");
+    content: url("../../../public/images/background/shape-1.png");
     z-index: 1;
     left: 0;
     top: 0;
