@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import React, { useEffect } from 'react';
-import Fancybox from '../../assets/js/fancybox';
+import Fancybox from '../../assets/plugins/fancybox';
 
 const ProcessSection = () => {
     useEffect(() => {
