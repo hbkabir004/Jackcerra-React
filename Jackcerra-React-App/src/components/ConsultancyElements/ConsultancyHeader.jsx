@@ -79,7 +79,7 @@ const ConsultancyHeader = () => {
 
                             <div className="logo-box">
                                 {/* <!-- Logo --> */}
-                                <div className="logo"><a href="/consultancy"><img src="/images/logo.svg" alt="img" title="" /></a></div>
+                                <div className="logo"><a href="/"><img src="/images/logo.svg" alt="img" title="" /></a></div>
                             </div>
                             <div className="nav-outer d-flex align-items-center">
 

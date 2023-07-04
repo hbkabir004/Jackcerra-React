@@ -29,7 +29,7 @@ const MobileNav = () => {
 
         function menuClickAction() {
             // Sub-Menu Open On-Click
-            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span className='submenu_opener d-lg-none'><i className='bi bi-chevron-right'></i></span>"));
+            $('.mr_menu_02 .mr_navmenu ul.navigation.clearfix li.dropdown').append($("<span class='submenu_opener d-lg-none'><i class='bi bi-chevron-right'></i></span>"));
             $('.mr_menu_02 ul.navigation.clearfix li.dropdown .submenu_opener').on("click", function (e) {
                 $(this).parent().toggleClass('nav_open');
                 $(this).siblings('ul').slideToggle();
