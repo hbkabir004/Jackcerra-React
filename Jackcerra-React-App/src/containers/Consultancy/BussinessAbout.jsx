@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonBox from '../../components/ConsultancyElements/ButtonBox';
+import ButtonBox from '../../components/BusinessElements/ButtonBoxBusiness';
 import FeatureBlock from '../../components/ConsultancyElements/FeatureBlock';
 
 const BussinessAbout = () => {

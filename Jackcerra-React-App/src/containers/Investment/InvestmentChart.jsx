@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 import NewsLetter from '../../components/InvestmentElements/NewsLetter';
 
@@ -36,6 +36,25 @@ const InvestmentChart = () => {
         },
     ];
 
+    const targetRef = useRef();
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    const windowSize = useRef([window.innerWidth, window.innerHeight]);
+    const monitorWidth = windowSize.current[0];
+
+    // console.log(monitorWidth);
+
+
+    useLayoutEffect(() => {
+        if (targetRef.current) {
+            setDimensions({
+                width: targetRef.current.offsetWidth,
+                height: targetRef.current.offsetHeight
+            });
+        }
+    }, []);
+
+    let elHeight = Number(dimensions.height);
+
 
     return (
         <section className="company-growth" style={{ backgroundImage: `url(../images/background/22.jpg)` }}>
@@ -47,17 +66,16 @@ const InvestmentChart = () => {
                             <div className="inner-column">
                                 <div className="image">
 
-                                    {/* <ResponsiveContainer width="100%" height="100%"> */}
                                     <BarChart
-                                        width={500}
-                                        height={300}
+                                        height={monitorWidth <= 576 ? 200 : 300}
+                                        width={monitorWidth <= 576 ? 350 : 500}
                                         data={data}
-                                    // margin={{
-                                    //     top: 5,
-                                    //     right: 30,
-                                    //     left: 20,
-                                    //     bottom: 5,
-                                    // }}
+                                        margin={{
+                                            top: 5,
+                                            right: 50,
+                                            left: 0,
+                                            bottom: 5,
+                                        }}
                                     >
                                         <CartesianGrid strokeDasharray="3 3" />
                                         <XAxis dataKey="name" />
@@ -67,10 +85,6 @@ const InvestmentChart = () => {
                                         <Bar dataKey="NetProfit" fill="rgb(0, 143, 251)" />
                                         <Bar dataKey="Revenue" fill="rgb(0, 227, 150)" />
                                     </BarChart>
-                                    {/* </ResponsiveContainer> */}
-
-                                    {/* <div id="barChart1"></div> */}
-                                    {/* <img src="../images/resource/bar-chart.png" alt="img" /> */}
                                 </div>
                             </div>
                         </div>

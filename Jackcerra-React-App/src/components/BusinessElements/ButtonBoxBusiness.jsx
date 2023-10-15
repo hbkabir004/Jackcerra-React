@@ -22,7 +22,7 @@ const ButtonBox = () => {
             {/* <!-- Play Box --> */}
             <Fancybox options={{ dragToClose: false }}>
                 <a href="https://www.youtube.com/watch?v=kxPCFljwJws" data-fancybox="video" className="lightbox-video play-box">
-                    <span><i className="bi bi-play-fill"></i></span> Watch Video
+                    <span><i className="fa fa-play"></i></span> Watch Video
                 </a>
             </Fancybox>
 
