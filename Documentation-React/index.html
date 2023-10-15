@@ -57,9 +57,7 @@
                                 <ul class="nav flex-column py-3" id="sidebar">
                                     <li><a href="#Info" style="background-color: #DF0A0A; color: #fff;">Template Information</a></li>
                                     <li><a href="#Install">Installation</a></li>
-                                    <!-- <li><a href="#html-structure">Folder Structure</a></li> -->
                                     <li><a href="#newPage">Create Starter Page</a></li>
-                                    <li><a href="#theme">Theme Configuration</a></li>
                                     <li><a href="#routing">Routing</a></li>
                                     <li><a href="#fonts">Fonts & Icons</a></li>
                                     <li><a href="#credits">Source & Credits</a></li>
@@ -245,105 +243,6 @@ getItem(
 
                                 <br>
                     <br>
-
-                     <!-- Theme Configuration -->
-                     <div class="p-5" id="theme" style="background-color: #002A5C;">
-                        <h3>Theme Configuration</h3>
-                        <p>For customizing theme go to <code>src/Pages/Shared/ThemeSwitcher.jsx</code> and customize the variables according to your necessity. Mrittik is based on react-bootstrap. For additional changes, here is the list of available variable for customization <a href="https://react-bootstrap.github.io/getting-started/introduction/">https://react-bootstrap.github.io/getting-started/introduction/</a>. <strong>Using theme variables in the app.</strong></p>
-
-                <h4>Change font</h4>
-                <p>Simplest way to change font is to go to google fonts, select fonts, click embed copy the link. Now go to <code>public/index.html</code> and paste the link in head tag. Please remove the links of any unused fonts from the head.</p>
-                <div class="highlight box mb-3">
-<pre><code>
-&lt;!DOCTYPE html>
-&lt;html dir="ltr" lang="en">
-&lt;head>
-&lt;meta charset="utf-8" />
-&lt;link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-&lt;meta name="viewport" content="width=device-width, initial-scale=1" />
-&lt;meta name="theme-color" content="#000000" />
-&lt;meta
-name="description"
-content="Web site created using create-react-app"
-/>
-&lt;meta http-equiv="X-UA-Compatible" content="chrome=1" />
-&lt;link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-
-&lt;link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-&lt;link rel="preconnect" href="https://fonts.gstatic.com" />
-+ &lt;link
-  href="YOUR_FONT"
-  rel="stylesheet"
-/>
-
-</code></pre>
-                    </div>
-        <br>
-        <h3>Navbar & Mobile Navbar Layout</h3>
-        <p>To change the Navbar side to top, go to <code>src/Pages/Shared/Header.jsx</code> and just set the Header component. You can update your menu item from here For Navbar and <code>src/Pages/Shared/MobileResponsiveMenu.jsx</code> for Mobile Navbar</p>
-        <div class="highlight box mb-3">
-<pre><code>
-import $ from 'jquery';
-import React, { useContext, useEffect } from 'react';
-import MiniCart from '../../containers/MiniCart';
-import { CartContext } from '../../Layout/Main';
-import AsideInfo from './AsideInfo';
-import MobileResponsiveMenu from './MobileResponsiveMenu';
-
-const Header = () => {
-const [cart, setCart] = useContext(CartContext);
-
-useEffect(() => {
-    .
-    .
-    .
-}, []);
-
-return (
-    &lt;&gt;
-        &lt;header className="header"&gt;
-            &lt;div className="container"&gt;
-
-              //  Paste Your Code Here 
-            
-              &lt;/div&gt;
-        &lt;/header&gt;
-
-        &lt;MobileResponsiveMenu /&gt;
-        &lt;MiniCart id='offcanvasNavbar' /&gt;
-        &lt;AsideInfo /&gt;
-    &lt;/&gt;
-);
-};
-
-export default Header;
-</code></pre>
-            </div>
-<br>
-            <h3>Change Logo</h3>
-            <p>To change both dark and light logo, go to <code>src/Pages/Shared/Header.jsx</code> and change source of the logo image</p>
-            <div class="highlight box mb-3">
-<pre><code>
-return (
-    &lt;&gt;
-        &lt;header className="header"&gt;
-            &lt;div className="container"&gt;
-              &lt;div className="header_inner d-flex align-items-center justify-content-between"&gt;
-                &lt;div className="logo"&gt;
-                  &lt;a href='/' className="light_logo"&gt;&lt;img src="YOUR LIGHT LOGO" alt="logo" /&gt;&lt;/a&gt;
-                  &lt;a href='/' className="dark_logo"&gt;&lt;img src="YOUR DARK LOGO" alt="logo" /&gt;&lt;/a&gt;
-                &lt;/div&gt;
-              .
-              .
-              .
-              &lt;/div&gt;
-            
-              &lt;/div&gt;
-        &lt;/header&gt;
-    &lt;/&gt;
-</code></pre>
-                </div>
-                </div>
 
                 <br>
                 <br>
